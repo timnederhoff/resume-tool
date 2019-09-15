@@ -1,0 +1,669 @@
+{
+  "language": "nld",
+  "titlepage": {
+    "name": "Tim Nederhoff"
+  },
+  "basics": {
+    "name": "Tim Nederhoff",
+    "label": "Test Automation Engineer",
+    "picture": "",
+    "email": "timnederhoff@gmail.com",
+    "date-of-birth": "11 oktober 1983",
+    "phone": "06-48233291",
+    "website": "https://nl.linkedin.com/in/timnederhoff",
+    "summary": "Tim is een test automation engineer die een praktische kijk heeft op (geautomatiseerd) testen. Hij heeft zich gespecialiseerd in het ontwerpen en opbouwen van complete omgevingen. Daarbij neemt hij de CI pipeline als uitgangspunt. Door zijn ervaring als zowel Test Tool Engineer als Test Automation Engineer is Tim in staat om gericht op verschillende behoeftes een oplossing te vinden. Hiervoor gebruikt Tim het liefst open source tooling als Maven, Java, Jenkins, Node, Cucumber, Selenium Webdriver/grid, Appium, Ansible en Linux. Deze weet hij te combineren met betaalde pakketten zoals Atlassian (Stash/Bitbucket, JIRA, HipChat, Confluence), Sonatype Nexus, Perfecto en HP (ALM, UFT). Tim is Java (OCJP) gecertificeerd en beheerst ook andere talen en protocollen zoals Groovy, SQL, Javascript en XML. Hij heeft passie voor techniek, werkt graag in een agile team en is een sparringpartner in het ontwikkelteam. Tim wordt het meest enthousiast om vanaf 0 een automatiseringsoplossing te bedenken en te bouwen.",
+
+    "keywords": "Pragmatisch, Zelfstandig, Betrokken, Analytisch, Resultaatgericht, Creatief, Handig"
+  },
+  "education": [
+    {
+      "institution": "Universiteit Utrecht",
+      "area": "Master Toegepaste Cognitive Psychologie",
+      "studyType": "Master",
+      "startDate": "2010-09-01",
+      "endDate": "2012-12-31",
+      "gpa": "??",
+      "courses": [
+        "Applied Cognitive Psychology (2)",
+        "Thesis in communication and hierarchical knowledge",
+        "Internship (quality perception)"
+      ],
+      "graduated": true
+    },
+    {
+      "institution": "Universiteit Utrecht",
+      "area": "Bachelor Psychologie",
+      "studyType": "Bachelor",
+      "startDate": "2007-09-01",
+      "endDate": "2010-09-01",
+      "gpa": "??",
+      "courses": [
+        "Cognitive Neuroscience",
+        "Perception and Action",
+        "Multilevel Analysis",
+        "Doing a Field Study Using Qualitative Methods",
+        "Applied Cognitive Psychology (1)",
+        "Theory Construction and Statistical Modeling",
+        "Conducting a Survey"
+      ],
+      "graduated": true
+    },
+    {
+      "institution": "Hogeschool Utrecht",
+      "area": "Management, Economie en Recht (propedeuse)",
+      "studyType": "Bachelor",
+      "startDate": "2005-09-01",
+      "endDate": "2007-09-01",
+      "graduated": true
+    },
+    {
+      "institution": "Technisch College Ede",
+      "area": "Optica",
+      "studyType": "MBO",
+      "startDate": "2000-09-01",
+      "endDate": "2005-09-01",
+      "graduated": true
+    },
+    {
+      "institution": "Oracle",
+      "area": "Oracle Certified Java Programmer",
+      "studyType": "vocational training",
+      "startDate": "2013-06-01",
+      "endDate": "2013-06-30"
+    },
+    {
+      "institution": "Xebia",
+      "area": "Workshop CI in Gitlab",
+      "studyType": "vocational training",
+      "startDate": "2017-05-23",
+      "endDate": "2017-05-23"
+    },
+    {
+      "institution": "DeTesters",
+      "area": "Workshop Angular 2",
+      "studyType": "vocational training",
+      "startDate": "2017-05-17",
+      "endDate": "2017-05-17"
+    },
+	{
+      "institution": "DeTesters",
+      "area": "Workshop CI with Docker en Jenkins 2.0",
+      "studyType": "vocational training",
+      "startDate": "2016-12-12",
+      "endDate": "2016-12-12"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Test Automatisering (HP UFT, IBM RFT, TOSCA, Selenium)",
+      "studyType": "vocational training",
+      "startDate": "2013-11-01",
+      "endDate": "2014-03-31"
+    },
+    {
+      "institution": "Xebia",
+      "area": "Training Selenium grids in Docker containers",
+      "studyType": "vocational training",
+      "startDate": "2015-03-01",
+      "endDate": "2015-03-31"
+    },
+    {
+      "institution": "DeTesters",
+      "area": "Training Protractor",
+      "studyType": "vocational training",
+      "startDate": "2015-06-04",
+      "endDate": "2015-06-04"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Scrum",
+      "studyType": "vocational training",
+      "startDate": "2013-09-01",
+      "endDate": "2013-09-30"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Eclipse-Selenium (Java)",
+      "studyType": "vocational training",
+      "startDate": "2014-04-01",
+      "endDate": "2014-04-30"
+    },
+    {
+      "institution": "Tricentis",
+      "area": "Tosca Certified User Foundation Level",
+      "studyType": "vocational training",
+      "startDate": "2014-05-01",
+      "endDate": "2014-05-31"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training LEAN Yellow Belt",
+      "studyType": "vocational training",
+      "startDate": "2013-07-01",
+      "endDate": "2013-07-31"
+    },
+    {
+      "institution": "DeTesters",
+      "area": "Training Serenity BDD",
+      "studyType": "vocational training",
+      "startDate": "2016-10-11",
+      "endDate": "2016-10-11"
+    },
+    {
+      "institution": "Exin",
+      "area": "TMap Next Foundation",
+      "studyType": "vocational training",
+      "startDate": "2013-09-01",
+      "endDate": "2013-09-30"
+    },
+    {
+      "institution": "DeTesters",
+      "area": "Training Galen Framework",
+      "studyType": "vocational training",
+      "startDate": "2015-09-24",
+      "endDate": "2015-09-24"
+    },
+    {
+      "institution": "DeTesters",
+      "area": "Training Mutation Testing",
+      "studyType": "vocational training",
+      "startDate": "2016-03-16",
+      "endDate": "2016-03-16"
+    },
+    {
+      "institution": "Xebia",
+      "area": "BDD in plain Java with JGiven",
+      "studyType": "vocational training",
+      "startDate": "2016-02-09",
+      "endDate": "2016-02-09"
+    },
+    {
+      "institution": "Testworks Conf",
+      "area": "Training Robot framework",
+      "studyType": "vocational training",
+      "startDate": "2015-03-01",
+      "endDate": "2015-03-31"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training AutoIT",
+      "studyType": "vocational training",
+      "startDate": "2014-04-01",
+      "endDate": "2014-04-30"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Agile Foundation",
+      "studyType": "vocational training",
+      "startDate": "2013-04-01",
+      "endDate": "2013-04-30"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Agile Testen Foundation",
+      "studyType": "vocational training",
+      "startDate": "2013-04-01",
+      "endDate": "2013-04-30"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Application Security - Awareness",
+      "studyType": "vocational training",
+      "startDate": "2013-04-01",
+      "endDate": "2013-04-30"
+    },
+    {
+      "institution": "Sogeti",
+      "area": "Training Inleiding Usability Testen",
+      "studyType": "vocational training",
+      "startDate": "2013-04-01",
+      "endDate": "2013-04-30"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Nederlands",
+      "fluency-speaking": "Moedertaal",
+      "fluency-writing": "Moedertaal"
+    },
+    {
+      "language": "Engels",
+      "fluency-speaking": "Vloeiend",
+      "fluency-writing": "Vloeiend"
+    }
+  ],
+  "know-how": {
+    "methods-techniques": [
+      {
+        "name": "Agile/Scrum",
+        "experience-since": "2013"
+      },
+      {
+        "name": "TMap Next",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Business Process Testing",
+        "experience-since": "2014"
+      },
+      {
+        "name": "TAKT",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Continuous Integration",
+        "experience-since": "2015"
+      }
+    ],
+    "test-types": [
+      {
+        "name": "UT (Unittest)",
+        "experience-since": "2013"
+      },
+      {
+        "name": "SIT (systeemintegratietest)",
+        "experience-since": "2013"
+      },
+      {
+        "name": "FAT (functionele acceptatietest)",
+        "experience-since": "2014"
+      },
+      {
+        "name": "GAT (gebruikersacceptatietest)",
+        "experience-since": "2014"
+      },
+      {
+        "name": "PAT (productieacceptatietest)",
+        "experience-since": "2014"
+      },
+      {
+        "name": "KT (ketentest)",
+        "experience-since": "2013"
+      }
+    ],
+    "test-forms": [
+      {
+        "name": "Witness, Regressie, Progressie",
+        "experience-since": "2013"
+      }
+      ],
+    "branche-knowledge": [
+      {
+        "name": "Bankwezen",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Telecommunicatie",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Wetenschappelijk onderzoek",
+        "experience-since": "2010"
+      },
+      {
+        "name": "Mobile Development",
+        "experience-since": "2015"
+      }
+    ],
+    "coding-languages": [
+      {
+        "name": "Java",
+        "experience-since": "2012"
+      },
+      {
+        "name": "Javascript/JSON",
+        "experience-since": "2011"
+      },
+      {
+        "name": "Typescript",
+        "experience-since": "2017"
+      },
+      {
+        "name": "Groovy",
+        "experience-since": "2016"
+      },
+      {
+        "name": "Python",
+        "experience-since": "2015"
+      },
+      {
+        "name": "C/Arduino",
+        "experience-since": "2015"
+      },
+      {
+        "name": "SQL",
+        "experience-since": "2013"
+      },
+      {
+        "name": "HTML",
+        "experience-since": "2011"
+      },
+      {
+        "name": "XML/XSD",
+        "experience-since": "2013"
+      },
+      {
+        "name": "YAML",
+        "experience-since": "2015"
+      },
+      {
+        "name": "PHP",
+        "experience-since": "2012"
+      },
+      {
+        "name": "VB Script",
+        "experience-since": "2013"
+      },
+      {
+        "name": "VB.NET",
+        "experience-since": "2013"
+      }
+    ],
+    "tools": [
+      {
+        "name": "HP ALM",
+        "experience-since": "2013"
+      },
+      {
+        "name": "JIRA",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Perfecto Mobile",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Jenkins",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Docker",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Maven",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Appium",
+        "experience-since": "2015"
+      },
+      {
+        "name": "SoapUI",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Tosca",
+        "experience-since": "2014"
+      },
+      {
+        "name": "Selenium Webdriver",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Cucumber JVM",
+        "experience-since": "2014"
+      },
+      {
+        "name": "JUnit",
+        "experience-since": "2014"
+      },
+      {
+        "name": "Git",
+        "experience-since": "2013"
+      },
+      {
+        "name": "Subversion",
+        "experience-since": "2017"
+      },
+      {
+        "name": "REST-Assured",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Ansible",
+        "experience-since": "2015"
+      },
+      {
+        "name": "SSH",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Sonatype Nexus",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Artifactory",
+        "experience-since": "2017"
+      },
+      {
+        "name": "Eclipse",
+        "experience-since": "2007"
+      },
+      {
+        "name": "Intellij",
+        "experience-since": "2015"
+      },
+      {
+        "name": "IBM Rational",
+        "experience-since": "2014"
+      },
+      {
+        "name": "Microsoft Test Manager",
+        "experience-since": "2013"
+      },
+      {
+        "name": "AutoIT",
+        "experience-since": "2014"
+      },
+      {
+        "name": "MySQL",
+        "experience-since": "2011"
+      },
+      {
+        "name": "Oracle DB",
+        "experience-since": "2013"
+      },
+      {
+        "name": "SQLite",
+        "experience-since": "2014"
+      }
+      ],
+    "server-software": [
+      {
+        "name": "Apache",
+        "experience-since": "2012"
+      },
+      {
+        "name": "Microsoft IIS",
+        "experience-since": "2011"
+      },
+      {
+        "name": "Tomcat",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Websphere",
+        "experience-since": "2015"
+      },
+      {
+        "name": "Openshift",
+        "experience-since": "2017"
+      }
+    ],
+    "operating-systems": [
+      {
+        "name": "Linux (Ubuntu (server), Redhat)",
+        "experience-since": "2011"
+      },
+      {
+        "name": "OSX/MacOS",
+        "experience-since": "2014"
+      },
+      {
+        "name": "Microsoft Windows",
+        "experience-since": "2002"
+      }
+    ]
+  },
+  "work": [
+	{
+      "company": "Sociale Verzekeringsbank - Webkanalen",
+      "position": "Test Automation Engineer",
+      "website": "",
+      "startDate": "2017-07-11",
+      "endDate": "Present",
+      "summary": "Tijdens de POC fase voor de opzet van een nieuwe ontwikkelomgeving verzorgde Tim de inrichting van de testautomatisering. Daarvoor zette hij de teststrategie op waarmee de geautomatiseerde testen integraal onderdeel van de CI/CD oplossing werden. Angular applicaties werden getest door Cucumber, Protractor, Galen en Pa11y waar de backend Java Spring applicaties werden getest met Cucumber-JVM en Rest-assured. Stubs voor de backend applicaties heeft hij opgezet met Wiremock. De (test) applicaties heeft hij zoveel mogelijk met Docker weten te containeriseren waardoor testen geïsoleerd uitgevoerd konden worden.",
+      "activities": [
+        "Testautomatisering ontwerp",
+        "CI pipeline inrichting"
+        ],
+      "process": "Testautomatisering, Testrapportage, service testing",
+      "coding-languages": "Java, Groovy, Javascript, Bash, Docker, YAML",
+      "test-types": "KT, GAT, PAT, IT",
+      "tools": "Maven, NPM/Nodejs, Jenkins, Selenium Webdriver, Protractor, REST-assured, Wiremock, Cucumber, Pa11y, Galen, Ansible, Docker, Angular, Artifactory, Jira, Confluence, IntelliJ, Spring boot"
+    },
+    {
+      "company": "Rabobank Nederland - Programma Online",
+      "position": "Test Automation Engineer",
+      "website": "",
+      "startDate": "2015-06-01",
+      "endDate": "2017-06-22",
+      "summary": "Als lid van een ondersteunend team voor de inrichting van verschillende testomgevingen, neemt Tim verschillende rollen in. Hoofdtaak was hier het opzetten van een automatiseringsframework. Dit framework dat hij schrijft in Java en met behulp van Maven, JUnit, Selenium webdriver en Cucumber, heeft inmiddels de volwassen fase bereikt. Verschillende interne teams maken nu gebruik van het framework om browsers en (mobiele) applicaties op PC's, tablets en smartphones aan te sturen voor hun testautomatisering. Configuratie en testdata heeft hij hierbij centraal opgeslagen, met REST interfaces kan deze data in het gewenste formaat opgehaald worden. Hierbij heeft Tim ook veel geleerd van robust programmeren en het schrijven van unit-tests. Uiteindelijk heeft Tim het project in een CI pipeline in Jenkins 2 geplaatst waarin de fases building, testing, release en deployment volledig geautomatiseerd zijn. Naast het framework werkt Tim aan de testomgeving. Hiervoor heeft hij een Selenium grid opgezet waarin zowel browsers als fysieke en gesimuleerde smartphones en tablets beschikbaar zijn. Hierbij combineerde hij Selenium Grid 2 met Appium om de aansturing te realiseren. Ansible scripts worden gebruikt om het grid en nodes weer te starten wanneer een probleem heeft voorgedaan. Om deze omgeving onderhoudbaar te houden en om monitoring te bewerkstelligen schreef hij een web applicatie in Java, Maven, Spring Boot, Thymeleaf, Javascript en Bootstrap. Met deze administratie applicatie die gebruikt maakt van een REST interface, maakte hij het mogelijk om de Selenium hub en de Nodes te beheren. Applicaties draaien op verschillende omgevingen (bijvoorbeeld productie, acceptatie, test) kunnen gesynchroniseerd worden. Hiervoor heeft Tim een tool geschreven in Java en Maven waarmee alle geïndexeerde applicaties vergeleken worden tussen omgevingen en bepaald kan worden welke versies gescynchroniseerd moeten worden. Zo worden applicaties automatisch gestopt, deployed en gestart.",
+      "activities": [
+        "Testautomatisering framework ontwikkeling",
+        "Testautomatisering ontwerp",
+        "CI pipeline inrichting",
+        "Testtool ontwikkeling",
+        "Leveren support op interne en externe tooling"
+        ],
+      "process": "Testautomatisering, Testrapportage, service testing, mobile testing",
+      "coding-languages": "Java, Groovy, Javascript, XML, Bash, Docker, YAML",
+      "test-types": "KT, GAT, PAT, IT",
+      "tools": "Maven, Jenkins, Selenium Webdriver, Appium, REST-assured, Wiremock, Cucumber, Docker, Perfecto, Jira, Confluence, Stash, Sonatype Nexus, IntelliJ, Ansible, Spring MVC"
+    },
+    {
+      "company": "KPN - Mobiel Prepaid",
+      "position": "Testtool Engineer",
+      "website": "",
+      "startDate": "2014-11-01",
+      "endDate": "2015-06-15",
+      "summary": "Om automatische testtaken eenmalig te ontwerpen en deze te kunnen hergebruiken heeft hij een met behulp van Business Process Testing (BPT) een setup verwezenlijkt. Door gebruik te maken van de HP ALM en UFT suites automatiseert hij de regressietesten die gebaseerd zijn op web interfaces, databases, XML, webservices, FTP verkeer en mobiele netwerken. Hiermee deed ook ervaring op om elektronica en GSM hardware automatisch aan te sturen door te werken met Arduino pakketten.",
+      "activities": [
+        "Testautomatisering ontwerp",
+        "Testautomatisering framework ontwikkeling",
+        "Business Process Testing implementatie",
+        "HP UFT Business Componenten (VBScript gebaseerd scripten)",
+        "Test Data Management ontwerp",
+        "SOAP testing"
+      ],
+      "process": "Testautomatisering, Testrapportage, TMap Next, Business Process Testing",
+      "coding-languages": "UFT scripting (VBScript), XML, Arduino C",
+      "test-types": "KT, GAT, PAT",
+      "tools": "HP ALM, HP UFT, SoapUI, Oracle PL/SQL Developer, Arduino"
+    },
+    {
+      "company": "KPN - Mobiel Prepaid",
+      "position": "Test Engineer",
+      "website": "",
+      "startDate": "2014-06-01",
+      "endDate": "2014-10-31",
+      "summary": "Voor meerdere projecten draaide Tim mee in het test team voor het prepaid klanten systeem van KPN. Hierbij heeft hij de taken van end-2-end testen opgenomen waaronder specificatie, witness, review, PRA en het uitvoeren van gebruikerstesten. Voor test data management maakte hij gebruik van Oracle PL/SQL Developer om dynamisch gegevens via SQL query’s op te vragen. Hij werkte dagelijks met HP ALM, XML, SoapUI en Huawei NGBSS.",
+      "activities": [
+        "Interface testing (webservices)",
+        "Test data management",
+        "Test specificatie (SIT, GAT, KT)",
+        "Test uitvoering (SIT, GAT, KT)",
+        "Product Risico Analyse (PRA)",
+        "Witness (FAT)",
+        "Test review",
+        "Test planning"
+      ],
+      "process": "Interface testing, TMap Next, Product Risico Analyse, Test planning",
+      "coding-languages": "",
+      "test-types": "SIT, FAT, GAT, KT",
+      "tools": "Huawei NGBSS, HP ALM, SoapUI"
+    },
+    {
+      "company": "Sogeti",
+      "position": "Testtool Engineer",
+      "website": "",
+      "startDate": "2014-03-01",
+      "endDate": "2014-05-31",
+      "summary": "Voor het maken van lesmateriaal voor een workshop ontwikkelde Tim een Java framework die gebruikmaakt van Selenium webdriver. Tijdens de ontwikkeling van dit framework werden versies opgeleverd die de basis vormden voor de lesavonden. Onderdelen werden in stappen toegevoegd waarin testdata werd verwerkt, scripts werden ingelezen, keywords werden ingeleerd, deze kerywords vertaald werden in herbruikbare acties en logging werd weggeschreven in het juiste formaat.",
+      "activities": [
+        "Design testframework",
+        "Design test data management",
+        "Programmeren framework (modules)",
+        "Schrijven documentatie/opdrachten"
+      ],
+      "process": "Lesmateriaal ontwikkeling, Framework ontwikkeling",
+      "coding-languages": "Java",
+      "test-types": "",
+      "tools": "Eclipse IDE, Selenium webdriver"
+    },
+    {
+      "company": "KPN - Mobiel Postpaid",
+      "position": "Test Engineer",
+      "website": "",
+      "startDate": "2013-08-01",
+      "endDate": "2014-05-31",
+      "summary": "Tim ontwikkelde een keyword en data driven framework voor automatisering voor specifieke terminal emulatie in VB.NET. Hierdoor was het mogelijk om testen aan te sturen vanuit gebruiksvriendelijke Excel sheets, waarmee ook test data management en logging meegenomen is. Hiermee is Tim bekend geraakt in aansturing HP NonStop systemen en ontwikkeling in MS Visual Studio. Voor de aanpassing van het order en facturatiesysteem op SEPA heeft Tim gewerkt aan end-to-end testen en ketentesten. Hierbij ontwikkelde Tim ervaring met HP ALM, testvoorbereiding, -specificatie en -uitvoering. Hij gebruikte en ontwikkelde zijn vaardigheden in testen volgens TMap Next, SQL queries maken, XML verkeer analyseren en het werken met verschillende klantspecifieke informatiesystemen die gebaseerd zijn op HP NonStop/Tandem en TIBCO. Naast zijn werkzaamheden bij de klant ontwikkelde Tim twee tools die later ingezet werden om het test proces te ondersteunen. De in Java ontwikkelde tools hielpen de testers om data bestanden te generen in het juiste format, en om SQL query’s te genereren vanuit een grafische interface. De dynamische werkomgeving van ontwikkelaars, testers en management zorgde voor een ontwikkeling in Tim zijn persoonlijk en communicatieve vaardigheden.",
+      "activities": [
+        "Opzetten keyword en data driven framework",
+        "Testen van HP NonStop OS systemen",
+        "Query’s schrijven HP NonStop SQL",
+        "XML verkeer analyseren",
+        "Automatiseren logbestanden",
+        "Automatiseren test data",
+        "Test specificatie",
+        "Uitvoeren van witnessen op systeemtesten en systeem integratietesten van leveranciers (statisch)",
+        "Uitvoeren van witnessen op testobjecten op locatie van leveranciers (dynamisch)",
+        "Uitvoeren van project of releasegerelateerde E2E testgevallen",
+        "Opstellen testlogs voor uitgevoerde testgevallen",
+        "Support aan andere projecten",
+        "Schrijven van rapporten (witness rapporten, testverslagen)",
+        "Bevindingen registratie in HP ALM",
+        "Monitoren bevindingen en uitzetten bij de juiste partij"
+      ],
+      "process": "TMap Next",
+      "coding-languages": "VB.NET, SQL, XML, Java",
+      "test-types": "SIT, KT, Witness",
+      "tools": "HP NonStop/Tandem/SQL, HP ALM, MS Visual Studio, TIBCO"
+    },
+    {
+      "company": "Vereniging",
+      "position": "Web ontwikkelaar",
+      "website": "",
+      "startDate": "2012-11-01",
+      "endDate": "2013-05-31",
+      "summary": "Voor een vereniging is een systeem nodig geweest om competitiestanden, ledenlijst en de agenda bij te houden en te presenteren. Daarvoor heeft Tim een web gebaseerd administratiesysteem ontwikkeld. Hierbij heeft hij kennis opgedaan van PHP, MySQL, HTML en CSS.",
+      "activities": [
+        "Programmeren mutatie systeem",
+        "Inrichten database",
+        "Schrijven backend",
+        "Schrijven web interface"
+      ],
+      "process": "Web applicatie ontwikkeling",
+      "coding-languages": "HTML, CSS, PHP, MySQL",
+      "tools": "Windows, Apache, MySQL, PHP"
+    },
+    {
+      "company": "TNO - Defensie en Veiligheid",
+      "position": "Onderzoeker",
+      "website": "",
+      "startDate": "2012-03-01",
+      "endDate": "2012-10-31",
+      "summary": "Als onderdeel van een project binnen een wetenschappelijk instituut (TNO) heeft Tim een tool ontwikkeld voor het statistisch toetsen van onderzoeksresultaten. Het project ging in op de vraag: \"Hoe kan men het beste de communicatie binnen een operationeel team onderzoeken?\".Hiervoor heeft Tim een classificatie methode ontwikkeld waarbij gesproken communicatie ingedeeld wordt in categorieën op basis van aantal woorden en zinnen. Met behulp van het in Java ontwikkelde tool worden de verzamelde gegevens statistisch getoetst. Hierbij worden statistische gegevens onttrokken en verwerkt binnen het opgeleverde tool.",
+      "activities": [
+        "Programma ontwerp",
+        "Programmeren classificatie systeem",
+        "Vertalen statistische testen naar code",
+        "Test rapportage"
+      ],
+      "process": "Onderzoek",
+      "coding-languages": "Java",
+      "tools": "Eclipse IDE"
+    }
+
+  ]
+}

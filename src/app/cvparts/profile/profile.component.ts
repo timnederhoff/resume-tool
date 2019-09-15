@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -9,20 +9,6 @@ export interface BasicItem {
   position: number;
 }
 
-const BASIC_DATA: BasicItem[] = [
-  {
-    key: 'basic.name',
-    name: 'Naam',
-    value: 'Tim Nederhoff',
-    position: 1
-  },
-  {
-    key: 'basic.age',
-    name: 'Leeftijd',
-    value: '35 jaar',
-    position: 2
-  }];
-
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -30,9 +16,9 @@ const BASIC_DATA: BasicItem[] = [
 })
 export class ProfileComponent implements OnInit {
 
-  basics = new MatTableDataSource<BasicItem>(BASIC_DATA);
+  @Input() basics;
   columnsToDisplay = ['select', 'name', 'value'];
-  selection = new SelectionModel<BasicItem>(true, []);
+  @Input() selection;
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
@@ -58,6 +44,7 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.selection = new SelectionModel<BasicItem>(true, []);
   }
 
 }

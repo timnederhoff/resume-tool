@@ -1,3 +1,9 @@
-<app-profile></app-profile>
-<app-work></app-work>
-<app-preview></app-preview>
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>
+    <app-cvparts [basics]="basics" [selection]="selection"></app-cvparts>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-preview [basics]="basics" [selection]="selection"></app-preview>
+  </mat-grid-tile>
+</mat-grid-list>
+

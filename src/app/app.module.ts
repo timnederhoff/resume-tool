@@ -9,6 +9,7 @@ import { MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { WorkComponent } from './cvparts/work/work.component';
 import { PreviewComponent } from './preview/preview.component';
+import { MatGridListModule } from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PreviewComponent } from './preview/preview.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

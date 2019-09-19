@@ -3,20 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CvpartsComponent } from './cvparts/cvparts.component';
-import { ProfileComponent } from './cvparts/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import { WorkComponent } from './cvparts/work/work.component';
-import { PreviewComponent } from './preview/preview.component';
-import { MatGridListModule } from "@angular/material/grid-list";
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PreviewComponent } from './cvparts/preview/preview.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatChipsModule } from '@angular/material/chips';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     CvpartsComponent,
-    ProfileComponent,
-    WorkComponent,
     PreviewComponent
   ],
   imports: [
@@ -24,7 +26,14 @@ import { MatGridListModule } from "@angular/material/grid-list";
     BrowserAnimationsModule,
     MatTableModule,
     MatCheckboxModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatChipsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

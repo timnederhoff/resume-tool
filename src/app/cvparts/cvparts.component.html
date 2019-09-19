@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <form>
+      <mat-selection-list #workItems>
+        <mat-list-option checkboxPosition="before" selected="true" [value]="workItem" *ngFor="let workItem of cvData.work">
+          {{workItem.position}} @ {{workItem.company}}
+        </mat-list-option>
+      </mat-selection-list>
+    </form>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-preview [work]="workItems.selectedOptions.selected"></app-preview>
+  </mat-drawer-content>
+</mat-drawer-container>

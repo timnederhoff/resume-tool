@@ -1,21 +1,15 @@
-import {Component, Input, OnInit} from '@angular/core';
-import * as allData from '../../assets/cv_tim_nederhoff_nl.json';
+import { Component } from '@angular/core';
+import lala from '../../assets/cv_tim_nederhoff_nl.json';
 
 @Component({
   selector: 'app-cvparts',
-  template: `
-    <app-profile [basics]="basics" [selection]="selection"></app-profile>
-    <app-work></app-work>
-  `
+  templateUrl: 'cvparts.component.html'
 })
-export class CvpartsComponent implements OnInit {
+export class CvpartsComponent {
 
-  @Input() basics;
-  @Input() selection;
+  cvData = lala;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
 
 }

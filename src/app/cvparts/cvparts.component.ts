@@ -8,6 +8,7 @@ import lala from '../../assets/cv_tim_nederhoff_nl.json';
 export class CvpartsComponent {
 
   cvData = lala;
+  opened = true;
 
   constructor() {
   }

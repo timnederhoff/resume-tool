@@ -1,8 +1,12 @@
 <div id="print-section">
-  <mat-card *ngFor="let selected of work" class="cv-item">
-    <mat-card-title>{{selected.value.position}}</mat-card-title>
-    <mat-card-subtitle>{{selected.value.startDate + ' - ' + selected.value.endDate}}</mat-card-subtitle>
-    <mat-card-content>{{selected.value.summary}}</mat-card-content>
-  </mat-card>
+  <section size="A4"><p>Title page!</p></section>
+  <section size="A4">
+
+    <mat-card *ngFor="let selected of work" class="cv-item">
+      <mat-card-title>{{selected.value.position}}</mat-card-title>
+      <mat-card-subtitle>{{selected.value.startDate + ' - ' + selected.value.endDate}}</mat-card-subtitle>
+      <mat-card-content>{{selected.value.summary}}</mat-card-content>
+    </mat-card>
+  </section>
 </div>
 

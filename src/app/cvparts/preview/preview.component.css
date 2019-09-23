@@ -1,3 +1,21 @@
-.cv-item {
-  width: 800px;
+div#print-section {
+  background: rgb(204,204,204);
+}
+section {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+section[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+@media print {
+  body, section {
+    margin: 0;
+    box-shadow: none;
+  }
 }

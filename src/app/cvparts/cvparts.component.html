@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened class="doNotPrint">
+  <mat-drawer mode="side" opened class="doNotPrint" [(opened)]="opened">
     <mat-selection-list #workItems>
       <mat-list-option checkboxPosition="before" selected="true" [value]="workItem" *ngFor="let workItem of cvData.work">
         {{workItem.position}} @ {{workItem.company}}
@@ -9,6 +9,7 @@
     <a mat-raised-button (click)="onPrint()">print!</a>
   </mat-drawer>
   <mat-drawer-content>
+    <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
     <app-preview [work]="workItems.selectedOptions.selected"></app-preview>
   </mat-drawer-content>
 </mat-drawer-container>

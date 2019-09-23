@@ -5,12 +5,8 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './preview.component.html',
   styleUrls: ['./preview.component.css']
 })
-export class PreviewComponent implements OnInit {
+export class PreviewComponent {
   @Input() work;
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

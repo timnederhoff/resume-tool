@@ -12,4 +12,8 @@ export class CvpartsComponent {
   constructor() {
   }
 
+  onPrint() {
+    window.print();
+  }
+
 }

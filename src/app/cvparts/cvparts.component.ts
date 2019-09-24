@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import lala from '../../assets/cv_tim_nederhoff_nl.json';
+import boe from '../../assets/translations.json';
 
 @Component({
   selector: 'app-cvparts',
@@ -7,7 +8,8 @@ import lala from '../../assets/cv_tim_nederhoff_nl.json';
 })
 export class CvpartsComponent {
 
-  cvData = lala;
+  resumeData = lala;
+  translations = boe.nl;
   opened = true;
 
   constructor() {

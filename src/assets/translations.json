@@ -1,0 +1,20 @@
+{
+  "nl": {
+    "name": "Naam",
+    "label": "Label",
+    "picture": "Foto",
+    "email": "E-mail",
+    "phone": "Telefoonnummer",
+    "website": "Website",
+    "summary": "samenvatting"
+  },
+  "en": {
+    "name": "Name",
+    "label": "Label",
+    "picture": "Picture",
+    "email": "E-mail",
+    "phone": "Phone number",
+    "website": "Website",
+    "summary": "Summery"
+  }
+}

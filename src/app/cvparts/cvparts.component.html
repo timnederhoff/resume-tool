@@ -1,15 +1,37 @@
 <mat-drawer-container class="example-container">
   <mat-drawer mode="side" opened class="doNotPrint" [(opened)]="opened">
-    <mat-selection-list #workItems>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="workItem" *ngFor="let workItem of cvData.work">
-        {{workItem.position}} @ {{workItem.company}}
+
+    <mat-selection-list #basics>
+      <h3 mat-subheader>Basics</h3>
+      <mat-list-option checkboxPosition="before" selected="true" [value]="basic" *ngFor="let basic of resumeData.basics | keyvalue">
+        {{(translations[basic.key]||basic.key) + ' - ' + basic.value | slice:0:35}}
       </mat-list-option>
     </mat-selection-list>
     <mat-divider></mat-divider>
+
+    <mat-selection-list #workItems>
+      <h3 mat-subheader>Work</h3>
+      <mat-list-option checkboxPosition="before" selected="true" [value]="workItem" *ngFor="let workItem of resumeData.work">
+        {{workItem.position + ' @ ' + workItem.company | slice:0:35}}
+      </mat-list-option>
+    </mat-selection-list>
+    <mat-divider></mat-divider>
+
+    <mat-selection-list #educations>
+      <h3 mat-subheader>Education</h3>
+      <mat-list-option checkboxPosition="before" selected="true" [value]="education" *ngFor="let education of resumeData.education">
+        {{education.area + ' @ ' + education.institution | slice:0:35}}
+      </mat-list-option>
+    </mat-selection-list>
+    <mat-divider></mat-divider>
+
     <a mat-raised-button (click)="onPrint()">print!</a>
   </mat-drawer>
   <mat-drawer-content>
     <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
-    <app-preview [work]="workItems.selectedOptions.selected"></app-preview>
+    <app-preview
+      [selectedWork]="workItems.selectedOptions.selected"
+      [resumeData]="resumeData"
+    ></app-preview>
   </mat-drawer-content>
 </mat-drawer-container>

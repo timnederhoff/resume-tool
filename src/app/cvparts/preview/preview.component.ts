@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatListOption } from '@angular/material/list';
 
 @Component({
   selector: 'app-preview',
@@ -6,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent {
-  @Input() work;
+  @Input() selectedWork;
+  @Input() resumeData;
 
-  constructor() { }
+  constructor() {
+  }
 }

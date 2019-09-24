@@ -15,12 +15,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import { TitlepageComponent } from './cvparts/preview/titlepage/titlepage.component';
+import { FooterComponent } from './cvparts/preview/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CvpartsComponent,
-    PreviewComponent
+    PreviewComponent,
+    TitlepageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

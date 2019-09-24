@@ -6,13 +6,18 @@
   "basics": {
     "name": "Tim Nederhoff",
     "label": "Test Automation Engineer",
+    "headline": "Tim is Pragmatisch, Zelfstandig, Betrokken, Analytisch, Resultaatgericht, Creatief en Handig",
     "picture": "",
     "email": "timnederhoff@gmail.com",
     "date-of-birth": "11 oktober 1983",
     "phone": "06-48233291",
     "website": "https://nl.linkedin.com/in/timnederhoff",
     "summary": "Tim is een test automation engineer die een praktische kijk heeft op (geautomatiseerd) testen. Hij heeft zich gespecialiseerd in het ontwerpen en opbouwen van complete omgevingen. Daarbij neemt hij de CI pipeline als uitgangspunt. Door zijn ervaring als zowel Test Tool Engineer als Test Automation Engineer is Tim in staat om gericht op verschillende behoeftes een oplossing te vinden. Hiervoor gebruikt Tim het liefst open source tooling als Maven, Java, Jenkins, Node, Cucumber, Selenium Webdriver/grid, Appium, Ansible en Linux. Deze weet hij te combineren met betaalde pakketten zoals Atlassian (Stash/Bitbucket, JIRA, HipChat, Confluence), Sonatype Nexus, Perfecto en HP (ALM, UFT). Tim is Java (OCJP) gecertificeerd en beheerst ook andere talen en protocollen zoals Groovy, SQL, Javascript en XML. Hij heeft passie voor techniek, werkt graag in een agile team en is een sparringpartner in het ontwikkelteam. Tim wordt het meest enthousiast om vanaf 0 een automatiseringsoplossing te bedenken en te bouwen.",
-
+    "profiles": [{
+      "network": "Twitter",
+      "username": "@timnederhoff",
+      "url": ""
+    }],
     "keywords": "Pragmatisch, Zelfstandig, Betrokken, Analytisch, Resultaatgericht, Creatief, Handig"
   },
   "education": [
@@ -513,14 +518,11 @@
       "startDate": "2017-07-11",
       "endDate": "Present",
       "summary": "Tijdens de POC fase voor de opzet van een nieuwe ontwikkelomgeving verzorgde Tim de inrichting van de testautomatisering. Daarvoor zette hij de teststrategie op waarmee de geautomatiseerde testen integraal onderdeel van de CI/CD oplossing werden. Angular applicaties werden getest door Cucumber, Protractor, Galen en Pa11y waar de backend Java Spring applicaties werden getest met Cucumber-JVM en Rest-assured. Stubs voor de backend applicaties heeft hij opgezet met Wiremock. De (test) applicaties heeft hij zoveel mogelijk met Docker weten te containeriseren waardoor testen geïsoleerd uitgevoerd konden worden.",
-      "activities": [
+      "highlights": [
         "Testautomatisering ontwerp",
         "CI pipeline inrichting"
         ],
-      "process": "Testautomatisering, Testrapportage, service testing",
-      "coding-languages": "Java, Groovy, Javascript, Bash, Docker, YAML",
-      "test-types": "KT, GAT, PAT, IT",
-      "tools": "Maven, NPM/Nodejs, Jenkins, Selenium Webdriver, Protractor, REST-assured, Wiremock, Cucumber, Pa11y, Galen, Ansible, Docker, Angular, Artifactory, Jira, Confluence, IntelliJ, Spring boot"
+      "tools": ["Java", "Groovy", "Javascript", "Bash", "Docker", "YAML", "Maven", "NodeJS", "Jenkins", "Selenium Webdriver", "Protractor", "REST-assured", "Wiremock", "Cucumber", "Pa11y", "Galen", "Ansible", "Docker", "Angular", "Artifactory", "Jira", "Confluence", "IntelliJ", "Spring boot"]
     },
     {
       "company": "Rabobank Nederland - Programma Online",
@@ -529,17 +531,14 @@
       "startDate": "2015-06-01",
       "endDate": "2017-06-22",
       "summary": "Als lid van een ondersteunend team voor de inrichting van verschillende testomgevingen, neemt Tim verschillende rollen in. Hoofdtaak was hier het opzetten van een automatiseringsframework. Dit framework dat hij schrijft in Java en met behulp van Maven, JUnit, Selenium webdriver en Cucumber, heeft inmiddels de volwassen fase bereikt. Verschillende interne teams maken nu gebruik van het framework om browsers en (mobiele) applicaties op PC's, tablets en smartphones aan te sturen voor hun testautomatisering. Configuratie en testdata heeft hij hierbij centraal opgeslagen, met REST interfaces kan deze data in het gewenste formaat opgehaald worden. Hierbij heeft Tim ook veel geleerd van robust programmeren en het schrijven van unit-tests. Uiteindelijk heeft Tim het project in een CI pipeline in Jenkins 2 geplaatst waarin de fases building, testing, release en deployment volledig geautomatiseerd zijn. Naast het framework werkt Tim aan de testomgeving. Hiervoor heeft hij een Selenium grid opgezet waarin zowel browsers als fysieke en gesimuleerde smartphones en tablets beschikbaar zijn. Hierbij combineerde hij Selenium Grid 2 met Appium om de aansturing te realiseren. Ansible scripts worden gebruikt om het grid en nodes weer te starten wanneer een probleem heeft voorgedaan. Om deze omgeving onderhoudbaar te houden en om monitoring te bewerkstelligen schreef hij een web applicatie in Java, Maven, Spring Boot, Thymeleaf, Javascript en Bootstrap. Met deze administratie applicatie die gebruikt maakt van een REST interface, maakte hij het mogelijk om de Selenium hub en de Nodes te beheren. Applicaties draaien op verschillende omgevingen (bijvoorbeeld productie, acceptatie, test) kunnen gesynchroniseerd worden. Hiervoor heeft Tim een tool geschreven in Java en Maven waarmee alle geïndexeerde applicaties vergeleken worden tussen omgevingen en bepaald kan worden welke versies gescynchroniseerd moeten worden. Zo worden applicaties automatisch gestopt, deployed en gestart.",
-      "activities": [
+      "highlights": [
         "Testautomatisering framework ontwikkeling",
         "Testautomatisering ontwerp",
         "CI pipeline inrichting",
         "Testtool ontwikkeling",
         "Leveren support op interne en externe tooling"
         ],
-      "process": "Testautomatisering, Testrapportage, service testing, mobile testing",
-      "coding-languages": "Java, Groovy, Javascript, XML, Bash, Docker, YAML",
-      "test-types": "KT, GAT, PAT, IT",
-      "tools": "Maven, Jenkins, Selenium Webdriver, Appium, REST-assured, Wiremock, Cucumber, Docker, Perfecto, Jira, Confluence, Stash, Sonatype Nexus, IntelliJ, Ansible, Spring MVC"
+      "tools": ["Java", "Groovy", "Javascript", "XML", "Bash", "Docker", "YAML", "Maven", "Jenkins", "Selenium Webdriver", "Appium", "REST-assured", "Wiremock", "Cucumber", "Docker", "Perfecto", "Jira", "Confluence", "Stash", "Sonatype Nexus", "IntelliJ", "Ansible", "Spring MVC"]
     },
     {
       "company": "KPN - Mobiel Prepaid",
@@ -548,7 +547,7 @@
       "startDate": "2014-11-01",
       "endDate": "2015-06-15",
       "summary": "Om automatische testtaken eenmalig te ontwerpen en deze te kunnen hergebruiken heeft hij een met behulp van Business Process Testing (BPT) een setup verwezenlijkt. Door gebruik te maken van de HP ALM en UFT suites automatiseert hij de regressietesten die gebaseerd zijn op web interfaces, databases, XML, webservices, FTP verkeer en mobiele netwerken. Hiermee deed ook ervaring op om elektronica en GSM hardware automatisch aan te sturen door te werken met Arduino pakketten.",
-      "activities": [
+      "highlights": [
         "Testautomatisering ontwerp",
         "Testautomatisering framework ontwikkeling",
         "Business Process Testing implementatie",
@@ -556,10 +555,7 @@
         "Test Data Management ontwerp",
         "SOAP testing"
       ],
-      "process": "Testautomatisering, Testrapportage, TMap Next, Business Process Testing",
-      "coding-languages": "UFT scripting (VBScript), XML, Arduino C",
-      "test-types": "KT, GAT, PAT",
-      "tools": "HP ALM, HP UFT, SoapUI, Oracle PL/SQL Developer, Arduino"
+      "tools": ["UFT scripting (VBScript)", "XML", "Arduino CHP ALM", "HP UFT", "SoapUI", "Oracle PL/SQL Developer", "Arduino"]
     },
     {
       "company": "KPN - Mobiel Prepaid",
@@ -568,7 +564,7 @@
       "startDate": "2014-06-01",
       "endDate": "2014-10-31",
       "summary": "Voor meerdere projecten draaide Tim mee in het test team voor het prepaid klanten systeem van KPN. Hierbij heeft hij de taken van end-2-end testen opgenomen waaronder specificatie, witness, review, PRA en het uitvoeren van gebruikerstesten. Voor test data management maakte hij gebruik van Oracle PL/SQL Developer om dynamisch gegevens via SQL query’s op te vragen. Hij werkte dagelijks met HP ALM, XML, SoapUI en Huawei NGBSS.",
-      "activities": [
+      "highlights": [
         "Interface testing (webservices)",
         "Test data management",
         "Test specificatie (SIT, GAT, KT)",
@@ -578,10 +574,7 @@
         "Test review",
         "Test planning"
       ],
-      "process": "Interface testing, TMap Next, Product Risico Analyse, Test planning",
-      "coding-languages": "",
-      "test-types": "SIT, FAT, GAT, KT",
-      "tools": "Huawei NGBSS, HP ALM, SoapUI"
+      "tools": ["Huawei NGBSS", "HP ALM", "SoapUI"]
     },
     {
       "company": "Sogeti",
@@ -590,16 +583,13 @@
       "startDate": "2014-03-01",
       "endDate": "2014-05-31",
       "summary": "Voor het maken van lesmateriaal voor een workshop ontwikkelde Tim een Java framework die gebruikmaakt van Selenium webdriver. Tijdens de ontwikkeling van dit framework werden versies opgeleverd die de basis vormden voor de lesavonden. Onderdelen werden in stappen toegevoegd waarin testdata werd verwerkt, scripts werden ingelezen, keywords werden ingeleerd, deze kerywords vertaald werden in herbruikbare acties en logging werd weggeschreven in het juiste formaat.",
-      "activities": [
+      "highlights": [
         "Design testframework",
         "Design test data management",
         "Programmeren framework (modules)",
         "Schrijven documentatie/opdrachten"
       ],
-      "process": "Lesmateriaal ontwikkeling, Framework ontwikkeling",
-      "coding-languages": "Java",
-      "test-types": "",
-      "tools": "Eclipse IDE, Selenium webdriver"
+      "tools": ["Java", "Eclipse IDE", "Selenium webdriver"]
     },
     {
       "company": "KPN - Mobiel Postpaid",
@@ -608,7 +598,7 @@
       "startDate": "2013-08-01",
       "endDate": "2014-05-31",
       "summary": "Tim ontwikkelde een keyword en data driven framework voor automatisering voor specifieke terminal emulatie in VB.NET. Hierdoor was het mogelijk om testen aan te sturen vanuit gebruiksvriendelijke Excel sheets, waarmee ook test data management en logging meegenomen is. Hiermee is Tim bekend geraakt in aansturing HP NonStop systemen en ontwikkeling in MS Visual Studio. Voor de aanpassing van het order en facturatiesysteem op SEPA heeft Tim gewerkt aan end-to-end testen en ketentesten. Hierbij ontwikkelde Tim ervaring met HP ALM, testvoorbereiding, -specificatie en -uitvoering. Hij gebruikte en ontwikkelde zijn vaardigheden in testen volgens TMap Next, SQL queries maken, XML verkeer analyseren en het werken met verschillende klantspecifieke informatiesystemen die gebaseerd zijn op HP NonStop/Tandem en TIBCO. Naast zijn werkzaamheden bij de klant ontwikkelde Tim twee tools die later ingezet werden om het test proces te ondersteunen. De in Java ontwikkelde tools hielpen de testers om data bestanden te generen in het juiste format, en om SQL query’s te genereren vanuit een grafische interface. De dynamische werkomgeving van ontwikkelaars, testers en management zorgde voor een ontwikkeling in Tim zijn persoonlijk en communicatieve vaardigheden.",
-      "activities": [
+      "highlights": [
         "Opzetten keyword en data driven framework",
         "Testen van HP NonStop OS systemen",
         "Query’s schrijven HP NonStop SQL",
@@ -625,10 +615,7 @@
         "Bevindingen registratie in HP ALM",
         "Monitoren bevindingen en uitzetten bij de juiste partij"
       ],
-      "process": "TMap Next",
-      "coding-languages": "VB.NET, SQL, XML, Java",
-      "test-types": "SIT, KT, Witness",
-      "tools": "HP NonStop/Tandem/SQL, HP ALM, MS Visual Studio, TIBCO"
+      "tools": ["VB.NET", "SQL", "XML", "Java", "HP NonStop/Tandem/SQL", "HP ALM", "MS Visual Studio", "TIBCO"]
     },
     {
       "company": "Vereniging",
@@ -637,15 +624,13 @@
       "startDate": "2012-11-01",
       "endDate": "2013-05-31",
       "summary": "Voor een vereniging is een systeem nodig geweest om competitiestanden, ledenlijst en de agenda bij te houden en te presenteren. Daarvoor heeft Tim een web gebaseerd administratiesysteem ontwikkeld. Hierbij heeft hij kennis opgedaan van PHP, MySQL, HTML en CSS.",
-      "activities": [
+      "highlights": [
         "Programmeren mutatie systeem",
         "Inrichten database",
         "Schrijven backend",
         "Schrijven web interface"
       ],
-      "process": "Web applicatie ontwikkeling",
-      "coding-languages": "HTML, CSS, PHP, MySQL",
-      "tools": "Windows, Apache, MySQL, PHP"
+      "tools": ["HTML", "CSS", "PHP", "MySQL", "Windows", "Apache", "MySQL", "PHP"]
     },
     {
       "company": "TNO - Defensie en Veiligheid",
@@ -654,15 +639,13 @@
       "startDate": "2012-03-01",
       "endDate": "2012-10-31",
       "summary": "Als onderdeel van een project binnen een wetenschappelijk instituut (TNO) heeft Tim een tool ontwikkeld voor het statistisch toetsen van onderzoeksresultaten. Het project ging in op de vraag: \"Hoe kan men het beste de communicatie binnen een operationeel team onderzoeken?\".Hiervoor heeft Tim een classificatie methode ontwikkeld waarbij gesproken communicatie ingedeeld wordt in categorieën op basis van aantal woorden en zinnen. Met behulp van het in Java ontwikkelde tool worden de verzamelde gegevens statistisch getoetst. Hierbij worden statistische gegevens onttrokken en verwerkt binnen het opgeleverde tool.",
-      "activities": [
+      "highlights": [
         "Programma ontwerp",
         "Programmeren classificatie systeem",
         "Vertalen statistische testen naar code",
         "Test rapportage"
       ],
-      "process": "Onderzoek",
-      "coding-languages": "Java",
-      "tools": "Eclipse IDE"
+      "tools": ["Java", "Eclipse IDE"]
     }
 
   ]

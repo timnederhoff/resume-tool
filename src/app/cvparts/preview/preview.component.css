@@ -1,3 +1,5 @@
+/* preview pages*/
+/* make the preview like this: https://codepen.io/rafaelcastrocouto/pen/LFAes */
 div#print-section {
   background: rgb(204,204,204);
 }
@@ -19,3 +21,9 @@ section[size="A4"] {
     box-shadow: none;
   }
 }
+
+/* Title page */
+#title-page h1 {
+  font-size: 3em;
+}
+

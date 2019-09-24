@@ -11,14 +11,25 @@
     "email": "timnederhoff@gmail.com",
     "date-of-birth": "11 oktober 1983",
     "phone": "06-48233291",
+    "location": {
+      "address": "Koppelweg 14",
+      "postalCode": "3704 GH",
+      "city": "Zeist",
+      "countryCode": "NL",
+      "region": "Nederland"
+    },
     "website": "https://nl.linkedin.com/in/timnederhoff",
     "summary": "Tim is een test automation engineer die een praktische kijk heeft op (geautomatiseerd) testen. Hij heeft zich gespecialiseerd in het ontwerpen en opbouwen van complete omgevingen. Daarbij neemt hij de CI pipeline als uitgangspunt. Door zijn ervaring als zowel Test Tool Engineer als Test Automation Engineer is Tim in staat om gericht op verschillende behoeftes een oplossing te vinden. Hiervoor gebruikt Tim het liefst open source tooling als Maven, Java, Jenkins, Node, Cucumber, Selenium Webdriver/grid, Appium, Ansible en Linux. Deze weet hij te combineren met betaalde pakketten zoals Atlassian (Stash/Bitbucket, JIRA, HipChat, Confluence), Sonatype Nexus, Perfecto en HP (ALM, UFT). Tim is Java (OCJP) gecertificeerd en beheerst ook andere talen en protocollen zoals Groovy, SQL, Javascript en XML. Hij heeft passie voor techniek, werkt graag in een agile team en is een sparringpartner in het ontwikkelteam. Tim wordt het meest enthousiast om vanaf 0 een automatiseringsoplossing te bedenken en te bouwen.",
     "profiles": [{
       "network": "Twitter",
       "username": "@timnederhoff",
-      "url": ""
+      "url": "https://twitter.com/TimNederhoff"
+    }, {
+      "network": "LinkedIn",
+      "username": "Tim Nederhoff",
+      "url": "https://nl.linkedin.com/in/timnederhoff"
     }],
-    "keywords": "Pragmatisch, Zelfstandig, Betrokken, Analytisch, Resultaatgericht, Creatief, Handig"
+    "kvk": "68298781"
   },
   "education": [
     {

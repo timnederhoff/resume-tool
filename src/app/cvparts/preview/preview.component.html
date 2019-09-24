@@ -1,5 +1,5 @@
 <div id="print-section">
-  <app-titlepage [resumeData]="resumeData"></app-titlepage>
+  <app-titlepage [resumeData]="resumeData" [selectedWork]="selectedWork"></app-titlepage>
 
   <mat-card *ngFor="let selected of selectedWork" class="cv-item">
     <mat-card-title>{{selected.value.position}}</mat-card-title>

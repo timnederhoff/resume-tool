@@ -27,3 +27,14 @@ section[size="A4"] {
   font-size: 3em;
 }
 
+app-footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8em;
+  color: #595959;
+  text-align: center;
+  height: 0.5in;
+  margin: 0;
+  padding: 0;
+}
+

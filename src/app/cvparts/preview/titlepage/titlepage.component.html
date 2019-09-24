@@ -1,7 +1,15 @@
-<h1>Curriculum Vitae {{resumeData.basics.name}}</h1>
+<section>
+  <h1>Curriculum Vitae {{basics.name}}</h1>
 
-<p>{{resumeData.basics.summary}}</p>
+  <p>{{basics.summary}}</p>
 
-<p id="headline">{{resumeData.basics.headline}}</p>
+  <p id="headline">{{basics.headline}}</p>
 
-<app-footer></app-footer>
+  <h2>Recente werk ervaring</h2>
+
+  <ul>
+    <li *ngFor="let rw of recentWork()">{{rw.value.startDate}} - {{rw.value.company}}</li>
+  </ul>
+
+</section>
+

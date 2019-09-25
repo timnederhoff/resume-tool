@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { TitlepageComponent } from './cvparts/preview/titlepage/titlepage.component';
 import { FooterComponent } from './cvparts/preview/footer/footer.component';
+import { WorkComponent } from './cvparts/preview/work/work.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './cvparts/preview/footer/footer.component';
     CvpartsComponent,
     PreviewComponent,
     TitlepageComponent,
-    FooterComponent
+    FooterComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

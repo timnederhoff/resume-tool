@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import lala from '../../assets/cv_tim_nederhoff_nl.json';
 import boe from '../../assets/translations.json';
+import Resume, { Work } from './Resume';
 
 @Component({
   selector: 'app-cvparts',
@@ -8,7 +9,7 @@ import boe from '../../assets/translations.json';
 })
 export class CvpartsComponent {
 
-  resumeData = lala;
+  resumeData: Resume = lala as Resume;
   translations = boe.nl;
   opened = true;
 
@@ -17,6 +18,10 @@ export class CvpartsComponent {
 
   onPrint() {
     window.print();
+  }
+
+  getSelectedWork(sw): Work[] {
+    return sw.map(o => o.value);
   }
 
 }

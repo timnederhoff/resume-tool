@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Work } from '../../Resume';
 
 @Component({
   selector: 'app-titlepage',
@@ -16,10 +17,10 @@ export class TitlepageComponent implements OnInit {
     this.basics = this.resumeData.basics;
   }
 
-  recentWork() {
+  recentWork(limit: number): Work[] {
     return this.selectedWork.sort((o, a) => {
-      return new Date(a.value.startDate).getTime() - new Date(o.value.startDate).getTime();
-    }).slice(0, 4);
+      return new Date(a.startDate).getTime() - new Date(o.startDate).getTime();
+    }).slice(0, limit);
   }
 
 }

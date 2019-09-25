@@ -1,0 +1,13 @@
+<section>
+  <div *ngFor="let selected of selectedWork" class="cv-item">
+    <h3>{{selected.position}} - {{selected.company}}</h3>
+    <span>{{selected.startDate}} - {{selected.endDate}}</span>
+    <p>{{selected.summary}}</p>
+    <h4>Activities:</h4>
+    <ul>
+      <li *ngFor="let activity of selected.highlights">{{activity}}</li>
+    </ul>
+    <h4>Tools:</h4>
+    <p>{{selected.tools.join(', ')}}</p>
+  </div>
+</section>

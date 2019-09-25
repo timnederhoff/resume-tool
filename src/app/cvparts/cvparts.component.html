@@ -30,7 +30,7 @@
   <mat-drawer-content>
     <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
     <app-preview
-      [selectedWork]="workItems.selectedOptions.selected"
+      [selectedWork]="getSelectedWork(workItems.selectedOptions.selected)"
       [resumeData]="resumeData"
     ></app-preview>
   </mat-drawer-content>

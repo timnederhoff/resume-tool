@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatListOption } from '@angular/material/list';
+import { Work } from '../Resume';
 
 @Component({
   selector: 'app-preview',
@@ -7,7 +8,7 @@ import { MatListOption } from '@angular/material/list';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent {
-  @Input() selectedWork;
+  @Input() selectedWork: Work[];
   @Input() resumeData;
 
   constructor() {

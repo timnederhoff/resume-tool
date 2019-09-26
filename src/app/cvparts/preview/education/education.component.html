@@ -1,0 +1,18 @@
+<section>
+  <h1>Opleiding</h1>
+
+  <h3>Behaalde Diploma's</h3>
+  <ul>
+    <li *ngFor="let ed of getHigherEducation()">{{ed.studyType}} {{ed.area}} - {{ed.institution}}</li>
+  </ul>
+
+  <h3>Vakopleidingen</h3>
+  <ul>
+    <li *ngFor="let ed of getOtherEducation()">{{ed.area}} - {{ed.institution}} - {{ed.endDate | date}}</li>
+  </ul>
+
+  <h3>Talen</h3>
+  <ul>
+    <li *ngFor="let language of getLanguages()">{{language.language}} - {{language.fluency}}</li>
+  </ul>
+</section>

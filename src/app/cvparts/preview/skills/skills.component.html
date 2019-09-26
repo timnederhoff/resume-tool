@@ -1,0 +1,44 @@
+<section>
+  <h1>Vakkennis</h1>
+  <ng-container *ngIf="getSkillsForKeyword('skillsMethodTechniques').length">
+    <h3>Methodieken/Technieken</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsMethodTechniques')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+
+  <ng-container *ngIf="getSkillsForKeyword('skillsBranchKnowledge').length">
+    <h3>Branchekennis</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsBranchKnowledge')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+
+  <ng-container *ngIf="getSkillsForKeyword('skillsProgramming').length">
+    <h3>Programmeertalen en protocollen</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsProgramming')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+
+  <ng-container *ngIf="getSkillsForKeyword('skillsServerSoftware').length">
+    <h3>Server Software</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsServerSoftware')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+
+  <ng-container *ngIf="getSkillsForKeyword('skillsTools').length">
+    <h3>Tools</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsTools')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+
+  <ng-container *ngIf="getSkillsForKeyword('skillsOSes').length">
+    <h3>Besturingssystemen</h3>
+    <ul>
+      <li *ngFor="let skill of getSkillsForKeyword('skillsOSes')">{{skill.name}} - {{skill.level}}</li>
+    </ul>
+  </ng-container>
+</section>

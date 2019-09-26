@@ -35,13 +35,11 @@
       "studyType": "Master",
       "startDate": "2010-09-01",
       "endDate": "2012-12-31",
-      "gpa": "??",
       "courses": [
         "Applied Cognitive Psychology (2)",
         "Thesis in communication and hierarchical knowledge",
         "Internship (quality perception)"
-      ],
-      "graduated": true
+      ]
     },
     {
       "institution": "Universiteit Utrecht",
@@ -49,7 +47,6 @@
       "studyType": "Bachelor",
       "startDate": "2007-09-01",
       "endDate": "2010-09-01",
-      "gpa": "??",
       "courses": [
         "Cognitive Neuroscience",
         "Perception and Action",
@@ -58,24 +55,21 @@
         "Applied Cognitive Psychology (1)",
         "Theory Construction and Statistical Modeling",
         "Conducting a Survey"
-      ],
-      "graduated": true
+      ]
     },
     {
       "institution": "Hogeschool Utrecht",
       "area": "Management, Economie en Recht (propedeuse)",
       "studyType": "Bachelor",
       "startDate": "2005-09-01",
-      "endDate": "2007-09-01",
-      "graduated": true
+      "endDate": "2007-09-01"
     },
     {
       "institution": "Technisch College Ede",
       "area": "Optica",
       "studyType": "MBO",
       "startDate": "2000-09-01",
-      "endDate": "2005-09-01",
-      "graduated": true
+      "endDate": "2005-09-01"
     },
     {
       "institution": "Oracle",
@@ -235,289 +229,460 @@
   "languages": [
     {
       "language": "Nederlands",
-      "fluency-speaking": "Moedertaal",
-      "fluency-writing": "Moedertaal"
+      "fluency": "Moedertaal"
     },
     {
       "language": "Engels",
-      "fluency-speaking": "Vloeiend",
-      "fluency-writing": "Vloeiend"
+      "fluency": "Vloeiend"
     }
   ],
-  "know-how": {
-    "methods-techniques": [
-      {
-        "name": "Agile/Scrum",
-        "experience-since": "2013"
-      },
-      {
-        "name": "TMap Next",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Business Process Testing",
-        "experience-since": "2014"
-      },
-      {
-        "name": "TAKT",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Continuous Integration",
-        "experience-since": "2015"
-      }
-    ],
-    "test-types": [
-      {
-        "name": "UT (Unittest)",
-        "experience-since": "2013"
-      },
-      {
-        "name": "SIT (systeemintegratietest)",
-        "experience-since": "2013"
-      },
-      {
-        "name": "FAT (functionele acceptatietest)",
-        "experience-since": "2014"
-      },
-      {
-        "name": "GAT (gebruikersacceptatietest)",
-        "experience-since": "2014"
-      },
-      {
-        "name": "PAT (productieacceptatietest)",
-        "experience-since": "2014"
-      },
-      {
-        "name": "KT (ketentest)",
-        "experience-since": "2013"
-      }
-    ],
-    "test-forms": [
-      {
-        "name": "Witness, Regressie, Progressie",
-        "experience-since": "2013"
-      }
-      ],
-    "branche-knowledge": [
-      {
-        "name": "Bankwezen",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Telecommunicatie",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Wetenschappelijk onderzoek",
-        "experience-since": "2010"
-      },
-      {
-        "name": "Mobile Development",
-        "experience-since": "2015"
-      }
-    ],
-    "coding-languages": [
-      {
-        "name": "Java",
-        "experience-since": "2012"
-      },
-      {
-        "name": "Javascript/JSON",
-        "experience-since": "2011"
-      },
-      {
-        "name": "Typescript",
-        "experience-since": "2017"
-      },
-      {
-        "name": "Groovy",
-        "experience-since": "2016"
-      },
-      {
-        "name": "Python",
-        "experience-since": "2015"
-      },
-      {
-        "name": "C/Arduino",
-        "experience-since": "2015"
-      },
-      {
-        "name": "SQL",
-        "experience-since": "2013"
-      },
-      {
-        "name": "HTML",
-        "experience-since": "2011"
-      },
-      {
-        "name": "XML/XSD",
-        "experience-since": "2013"
-      },
-      {
-        "name": "YAML",
-        "experience-since": "2015"
-      },
-      {
-        "name": "PHP",
-        "experience-since": "2012"
-      },
-      {
-        "name": "VB Script",
-        "experience-since": "2013"
-      },
-      {
-        "name": "VB.NET",
-        "experience-since": "2013"
-      }
-    ],
-    "tools": [
-      {
-        "name": "HP ALM",
-        "experience-since": "2013"
-      },
-      {
-        "name": "JIRA",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Perfecto Mobile",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Jenkins",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Docker",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Maven",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Appium",
-        "experience-since": "2015"
-      },
-      {
-        "name": "SoapUI",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Tosca",
-        "experience-since": "2014"
-      },
-      {
-        "name": "Selenium Webdriver",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Cucumber JVM",
-        "experience-since": "2014"
-      },
-      {
-        "name": "JUnit",
-        "experience-since": "2014"
-      },
-      {
-        "name": "Git",
-        "experience-since": "2013"
-      },
-      {
-        "name": "Subversion",
-        "experience-since": "2017"
-      },
-      {
-        "name": "REST-Assured",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Ansible",
-        "experience-since": "2015"
-      },
-      {
-        "name": "SSH",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Sonatype Nexus",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Artifactory",
-        "experience-since": "2017"
-      },
-      {
-        "name": "Eclipse",
-        "experience-since": "2007"
-      },
-      {
-        "name": "Intellij",
-        "experience-since": "2015"
-      },
-      {
-        "name": "IBM Rational",
-        "experience-since": "2014"
-      },
-      {
-        "name": "Microsoft Test Manager",
-        "experience-since": "2013"
-      },
-      {
-        "name": "AutoIT",
-        "experience-since": "2014"
-      },
-      {
-        "name": "MySQL",
-        "experience-since": "2011"
-      },
-      {
-        "name": "Oracle DB",
-        "experience-since": "2013"
-      },
-      {
-        "name": "SQLite",
-        "experience-since": "2014"
-      }
-      ],
-    "server-software": [
-      {
-        "name": "Apache",
-        "experience-since": "2012"
-      },
-      {
-        "name": "Microsoft IIS",
-        "experience-since": "2011"
-      },
-      {
-        "name": "Tomcat",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Websphere",
-        "experience-since": "2015"
-      },
-      {
-        "name": "Openshift",
-        "experience-since": "2017"
-      }
-    ],
-    "operating-systems": [
-      {
-        "name": "Linux (Ubuntu (server), Redhat)",
-        "experience-since": "2011"
-      },
-      {
-        "name": "OSX/MacOS",
-        "experience-since": "2014"
-      },
-      {
-        "name": "Microsoft Windows",
-        "experience-since": "2002"
-      }
-    ]
-  },
+  "skills": [
+    {
+      "name": "Agile/Scrum",
+      "level": "2013",
+      "keywords": [
+        "methods-techniques"
+      ]
+    },
+    {
+      "name": "TMap Next",
+      "level": "2013",
+      "keywords": [
+        "methods-techniques"
+      ]
+    },
+    {
+      "name": "Business Process Testing",
+      "level": "2014",
+      "keywords": [
+        "methods-techniques"
+      ]
+    },
+    {
+      "name": "TAKT",
+      "level": "2013",
+      "keywords": [
+        "methods-techniques"
+      ]
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "2015",
+      "keywords": [
+        "methods-techniques"
+      ]
+    },
+    {
+      "name": "UT (Unittest)",
+      "level": "2013",
+      "keywords": [
+        "test-types"
+      ]
+    },
+    {
+      "name": "SIT (systeemintegratietest)",
+      "level": "2013",
+      "keywords": [
+        "test-types"
+      ]
+    },
+    {
+      "name": "FAT (functionele acceptatietest)",
+      "level": "2014",
+      "keywords": [
+        "test-types"
+      ]
+    },
+    {
+      "name": "GAT (gebruikersacceptatietest)",
+      "level": "2014",
+      "keywords": [
+        "test-types"
+      ]
+    },
+    {
+      "name": "PAT (productieacceptatietest)",
+      "level": "2014",
+      "keywords": [
+        "test-types"
+      ]
+    },
+    {
+      "name": "KT (ketentest)",
+      "level": "2013",
+      "keywords": [
+        "test-types"
+      ]
+    },{
+      "name": "Witness, Regressie, Progressie",
+      "level": "2013",
+      "keywords": [
+        "test-forms"
+      ]
+    },{
+      "name": "Bankwezen",
+      "level": "2015",
+      "keywords": [
+        "branche-knowledge"
+      ]
+    },
+    {
+      "name": "Telecommunicatie",
+      "level": "2013",
+      "keywords": [
+        "branche-knowledge"
+      ]
+    },
+    {
+      "name": "Wetenschappelijk onderzoek",
+      "level": "2010",
+      "keywords": [
+        "branche-knowledge"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "2015",
+      "keywords": [
+        "branche-knowledge"
+      ]
+    },{
+      "name": "Java",
+      "level": "2012",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "Javascript/JSON",
+      "level": "2011",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "Typescript",
+      "level": "2017",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "Groovy",
+      "level": "2016",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "2015",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "C/Arduino",
+      "level": "2015",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "2013",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "2011",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "XML/XSD",
+      "level": "2013",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "YAML",
+      "level": "2015",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "2012",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "VB Script",
+      "level": "2013",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "VB.NET",
+      "level": "2013",
+      "keywords": [
+        "coding-languages"
+      ]
+    },
+    {
+      "name": "HP ALM",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "JIRA",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Perfecto Mobile",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Jenkins",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Maven",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Appium",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "SoapUI",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Tosca",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Selenium Webdriver",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Cucumber JVM",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "JUnit",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Subversion",
+      "level": "2017",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "REST-Assured",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Ansible",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "SSH",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Sonatype Nexus",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Artifactory",
+      "level": "2017",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Eclipse",
+      "level": "2007",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Intellij",
+      "level": "2015",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "IBM Rational",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Microsoft Test Manager",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "AutoIT",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "2011",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Oracle DB",
+      "level": "2013",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "SQLite",
+      "level": "2014",
+      "keywords": [
+        "tools"
+      ]
+    },
+    {
+      "name": "Apache",
+      "level": "2012",
+      "keywords": [
+        "server-software"
+      ]
+    },
+    {
+      "name": "Microsoft IIS",
+      "level": "2011",
+      "keywords": [
+        "server-software"
+      ]
+    },
+    {
+      "name": "Tomcat",
+      "level": "2015",
+      "keywords": [
+        "server-software"
+      ]
+    },
+    {
+      "name": "Websphere",
+      "level": "2015",
+      "keywords": [
+        "server-software"
+      ]
+    },
+    {
+      "name": "Openshift",
+      "level": "2017",
+      "keywords": [
+        "server-software"
+      ]
+    },
+    {
+      "name": "Linux (Ubuntu (server), Redhat)",
+      "level": "2011",
+      "keywords": [
+        "operating-systems"
+      ]
+    },
+    {
+      "name": "OSX/MacOS",
+      "level": "2014",
+      "keywords": [
+        "operating-systems"
+      ]
+    },
+    {
+      "name": "Microsoft Windows",
+      "level": "2002",
+      "keywords": [
+        "operating-systems"
+      ]
+    }
+  ],
   "work": [
 	{
       "company": "Sociale Verzekeringsbank - Webkanalen",

@@ -46,7 +46,7 @@ interface Volunteer {
   highlights: string[];
 }
 
-interface Education {
+export interface Education {
   institution: string;
   area: string;
   studyType: string;
@@ -71,13 +71,13 @@ interface Publication {
   summary: string;
 }
 
-interface Skill {
+export interface Skill {
   name: string;
   level: string;
-  keywords: string[];
+  keywords?: string[];
 }
 
-interface Language {
+export interface Language {
   language: string;
   fluency: string;
 }

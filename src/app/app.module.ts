@@ -18,6 +18,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { TitlepageComponent } from './cvparts/preview/titlepage/titlepage.component';
 import { FooterComponent } from './cvparts/preview/footer/footer.component';
 import { WorkComponent } from './cvparts/preview/work/work.component';
+import { SkillsComponent } from './cvparts/preview/skills/skills.component';
+import { EducationComponent } from './cvparts/preview/education/education.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { WorkComponent } from './cvparts/preview/work/work.component';
     PreviewComponent,
     TitlepageComponent,
     FooterComponent,
-    WorkComponent
+    WorkComponent,
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

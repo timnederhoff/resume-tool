@@ -1,5 +1,5 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened class="doNotPrint" [(opened)]="opened">
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened [(opened)]="opened" [fixedInViewport]="true" class="doNotPrint">
 
     <mat-selection-list #basics>
       <h3 mat-subheader>Basics</h3>
@@ -95,8 +95,8 @@
     </mat-selection-list>
     <mat-divider></mat-divider>
 
-  </mat-drawer>
-  <mat-drawer-content>
+  </mat-sidenav>
+  <mat-sidenav-content>
     <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
     <app-preview
       [selectedWork]="getSelectedWork(workItems.selectedOptions.selected)"
@@ -111,5 +111,5 @@
       [education]="{higherEducation: higherEducation.selectedOptions.selected, otherEducation: otherEducation.selectedOptions.selected}"
       [languages]="languages.selectedOptions.selected"
     ></app-preview>
-  </mat-drawer-content>
-</mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>

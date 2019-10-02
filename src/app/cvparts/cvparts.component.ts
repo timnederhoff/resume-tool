@@ -1,24 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import lala from '../../assets/cv_tim_nederhoff_nl.json';
 import boe from '../../assets/translations.json';
 import Resume, { Education, Skill, Work } from './Resume';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-cvparts',
   templateUrl: 'cvparts.component.html',
   styleUrls: ['cvparts.component.css']
 })
-export class CvpartsComponent {
+export class CvpartsComponent implements OnInit {
 
   resumeData: Resume = lala as Resume;
   translations = boe.nl;
   opened = true;
+  doc;
 
   constructor() {
   }
 
-  onPrint() {
-    window.print();
+  ngOnInit(): void {
+    this.doc = new jsPDF();
   }
 
   getSelectedWork(sw): Work[] {

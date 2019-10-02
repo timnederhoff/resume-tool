@@ -6,7 +6,7 @@ import Resume, { Education, Skill, Work } from './Resume';
 @Component({
   selector: 'app-cvparts',
   templateUrl: 'cvparts.component.html',
-  styles: [`@media print { .doNotPrint { display: none !important; }}`]
+  styleUrls: ['cvparts.component.css']
 })
 export class CvpartsComponent {
 

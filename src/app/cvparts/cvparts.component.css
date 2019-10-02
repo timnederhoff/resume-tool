@@ -1,0 +1,9 @@
+mat-sidenav {
+  width: 400px
+}
+
+@media print {
+  .doNotPrint {
+    display: none !important;
+  }
+}

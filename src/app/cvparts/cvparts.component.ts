@@ -20,7 +20,7 @@ export class CvpartsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.doc = new jsPDF();
+    // this.doc = new jsPDF();
   }
 
   getSelectedWork(sw): Work[] {

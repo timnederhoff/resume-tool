@@ -1,5 +1,6 @@
+<button mat-raised-button (click)="printResume()">Print Resume</button>
 <div id="print-section">
-  <app-titlepage [resumeData]="resumeData" [selectedWork]="selectedWork"></app-titlepage>
+  <app-titlepage id="title-page" [resumeData]="resumeData" [selectedWork]="selectedWork"></app-titlepage>
   <app-work [selectedWork]="selectedWork" ></app-work>
   <app-skills [skillsData]="skills"></app-skills>
   <app-education [education]="education" [languages]="languages"></app-education>

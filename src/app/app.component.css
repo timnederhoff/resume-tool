@@ -1,9 +1,0 @@
-@media print {
-  body, section {
-    margin: 0;
-    box-shadow: none;
-    page-break-after: always;
-    page-break-inside: avoid;
-  }
-}
-

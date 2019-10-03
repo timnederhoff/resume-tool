@@ -97,7 +97,7 @@
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
+    <p><mat-checkbox [(ngModel)]="opened" class="doNotPrint"></mat-checkbox></p>
     <app-preview
       [selectedWork]="getSelectedWork(workItems.selectedOptions.selected)"
       [resumeData]="resumeData"

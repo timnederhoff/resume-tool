@@ -1,5 +1,30 @@
 h1 {
-  font-size: 72px;
+  font-size: 45px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.rw-header {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rw-period {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.rw-tools {
+  margin-top: 1mm;
+}
+
+#title-headline {
+  text-align: center;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
 }

@@ -1,14 +1,21 @@
 <section>
   <h2>Werkervaring</h2>
-  <div *ngFor="let selected of selectedWork" class="cv-item">
-    <h3>{{selected.position}} - {{selected.company}}</h3>
-    <span>{{selected.startDate}} - {{selected.endDate}}</span>
-    <p>{{selected.summary}}</p>
-    <h4>Activities:</h4>
-    <ul>
-      <li *ngFor="let activity of selected.highlights">{{activity}}</li>
-    </ul>
-    <h4>Tools:</h4>
-    <p>{{selected.tools.join(', ')}}</p>
+  <div *ngFor="let selected of selectedWork; let last = last;" class="cv-item" [ngClass]="{last: last}">
+    <div class="work-title">
+      <div class="work-position">{{selected.position}}</div>
+      <div class="work-company">{{selected.company}}</div>
+    </div>
+    <div class="work-period">{{selected.startDate}} - {{selected.endDate}}</div>
+    <div class="work-summary">{{selected.summary}}</div>
+    <div class="work-label">Activities:</div>
+    <div class="work-highlights">
+      <ul>
+        <li *ngFor="let activity of selected.highlights">{{activity}}</li>
+      </ul>
+    </div>
+    <div class="work-label">Tools:</div>
+    <div class="work-tools">
+      {{selected.tools.join(', ')}}
+    </div>
   </div>
 </section>

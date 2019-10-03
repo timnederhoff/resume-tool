@@ -1,0 +1,45 @@
+.work-title {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 5mm;
+}
+
+.work-position {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.work-period {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 30%;
+}
+
+.work-label {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.work-summary {
+  margin-bottom: 5mm;
+}
+
+.work-highlights {
+  width: 85%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.work-tools {
+  width: 85%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul {
+  padding-inline-start: 20px;
+  margin-top: 0;
+  margin-bottom: 5mm;
+}

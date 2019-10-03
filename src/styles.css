@@ -2,6 +2,7 @@
 
 html, body {
   height: 100%;
+  font-size: 11pt;
 }
 
 body {
@@ -10,8 +11,9 @@ body {
 }
 
 section {
-  width: 21cm;
-  padding: 1in;
+  width: 17cm;
+  min-height: 297mm;
+  padding: 2cm;
   background: white;
   display: block;
   margin: 0 auto;
@@ -19,11 +21,23 @@ section {
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
+.cv-item:not(.last) {
+  margin-bottom: 1cm;
+}
+
 @media print {
   body, section {
     margin: 0;
     box-shadow: none;
     page-break-after: always;
+    page-break-inside: auto;
+  }
+
+  .cv-item {
     page-break-inside: avoid;
+  }
+
+  .doNotPrint {
+    display: none;
   }
 }

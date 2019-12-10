@@ -3,7 +3,8 @@ import cvData from '../../../../assets/cv_tim_nederhoff_nl.json';
 
 @Component({
   selector: 'app-footer',
-  template: '<footer>{{basics.email}} | {{basics.phone}} | {{basics.location.address}}, {{basics.location.postalCode}} {{basics.location.city}} | {{linkedInUrl}}</footer>'
+  template: '<footer>{{basics.email}} | {{basics.phone}} | {{basics.location.address}}, ' +
+    '{{basics.location.postalCode}} {{basics.location.city}} | {{linkedInUrl}}</footer>'
 })
 export class FooterComponent {
 

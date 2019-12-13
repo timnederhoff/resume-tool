@@ -20,6 +20,9 @@ import { FooterComponent } from './cvparts/preview/footer/footer.component';
 import { WorkComponent } from './cvparts/preview/work/work.component';
 import { SkillsComponent } from './cvparts/preview/skills/skills.component';
 import { EducationComponent } from './cvparts/preview/education/education.component';
+import { ApiService } from './service/api.service';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { SelectionService } from './service/selection.service';
 
 @NgModule({
   declarations: [
@@ -45,9 +48,10 @@ import { EducationComponent } from './cvparts/preview/education/education.compon
     HttpClientModule,
     MatCardModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
-  providers: [],
+  providers: [ApiService, SelectionService],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

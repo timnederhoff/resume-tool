@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Skill, Work } from '../Resume';
+import { Skill, Work } from '../../models/Resume';
 
 @Component({
   selector: 'app-preview',

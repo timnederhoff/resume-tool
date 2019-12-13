@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Language } from '../../Resume';
+import { Language } from '../../../models/Resume';
 
 @Component({
   selector: 'app-education',

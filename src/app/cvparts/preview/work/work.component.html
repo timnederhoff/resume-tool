@@ -1,6 +1,6 @@
 <section>
   <h2>Werkervaring</h2>
-  <div *ngFor="let selected of selectedWork; let last = last;" class="cv-item" [ngClass]="{last: last}">
+  <div *ngFor="let selected of work; let last = last;" class="cv-item" [ngClass]="{last: last}">
     <div class="work-title">
       <div class="work-position">{{selected.position}}</div>
       <div class="work-company">{{selected.company}}</div>

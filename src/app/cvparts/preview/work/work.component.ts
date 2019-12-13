@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Work } from '../../Resume';
+import { Work } from '../../../models/Resume';
+import { SelectionService } from '../../../service/selection.service';
 
 @Component({
   selector: 'app-work',
@@ -8,11 +9,12 @@ import { Work } from '../../Resume';
 })
 export class WorkComponent implements OnInit {
 
-  @Input() selectedWork: Work[];
+  constructor(private selectionService: SelectionService) { }
 
-  constructor() { }
+  work: Work[];
 
   ngOnInit() {
+    this.selectionService.selection.subscribe(selection => this.work = selection.map(o => o.value));
   }
 
 }

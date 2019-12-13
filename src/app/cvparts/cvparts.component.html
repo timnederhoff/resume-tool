@@ -1,115 +1,105 @@
-<mat-sidenav-container>
-  <mat-sidenav mode="side" opened [(opened)]="opened" [fixedInViewport]="true" class="doNotPrint">
+<mat-selection-list #basics>
+  <h3 mat-subheader>Basics</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="basic"
+                   *ngFor="let basic of resumeData.basics | keyvalue">
+    {{(translations[basic.key] || basic.key) + ' - ' + basic.value | slice:0:35}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #basics>
-      <h3 mat-subheader>Basics</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="basic" *ngFor="let basic of resumeData.basics | keyvalue">
-        {{(translations[basic.key]||basic.key) + ' - ' + basic.value | slice:0:35}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #workItems (selectionChange)="onGroupsChange(workItems.selectedOptions.selected)">
+  <h3 mat-subheader>Work</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="workItem"
+                   *ngFor="let workItem of resumeData.work">
+    {{workItem.position + ' @ ' + workItem.company | slice:0:35}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #workItems>
-      <h3 mat-subheader>Work</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="workItem" *ngFor="let workItem of resumeData.work">
-        {{workItem.position + ' @ ' + workItem.company | slice:0:35}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #educations>
+  <h3 mat-subheader>Education</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="education"
+                   *ngFor="let education of resumeData.education">
+    {{education.area + ' @ ' + education.institution | slice:0:35}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #educations>
-      <h3 mat-subheader>Education</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="education" *ngFor="let education of resumeData.education">
-        {{education.area + ' @ ' + education.institution | slice:0:35}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsMethodTechniques>
+  <h3 mat-subheader>Skills - Methods & Techniques</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('methods-techniques')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsMethodTechniques>
-      <h3 mat-subheader>Skills - Methods & Techniques</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('methods-techniques')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsBranchKnowledge>
+  <h3 mat-subheader>Skills - Branch Knowledge</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('branche-knowledge')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsBranchKnowledge>
-      <h3 mat-subheader>Skills - Branch Knowledge</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('branche-knowledge')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsProgramming>
+  <h3 mat-subheader>Skills - Programming</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('coding-languages')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsProgramming>
-      <h3 mat-subheader>Skills - Programming</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('coding-languages')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsServerSoftware>
+  <h3 mat-subheader>Skills - Server Software</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('server-software')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsServerSoftware>
-      <h3 mat-subheader>Skills - Server Software</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('server-software')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsTools>
+  <h3 mat-subheader>Skills - Tools</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('tools')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsTools>
-      <h3 mat-subheader>Skills - Tools</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('tools')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #skillsOSes>
+  <h3 mat-subheader>Skills - Operating Systems</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
+                   *ngFor="let skill of getSkillsForKeyword('operating-systems')">
+    {{skill.name}} - {{skill.level}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #skillsOSes>
-      <h3 mat-subheader>Skills - Operating Systems</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="skill" *ngFor="let skill of getSkillsForKeyword('operating-systems')">
-        {{skill.name}} - {{skill.level}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
+<mat-selection-list #higherEducation>
+  <h3 mat-subheader>Higher Education</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem"
+                   *ngFor="let educationItem of getHigherEducation()">
+    {{educationItem.studyType}} {{educationItem.area}} - {{educationItem.institution}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-selection-list #otherEducation>
+  <h3 mat-subheader>Other Education</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem"
+                   *ngFor="let educationItem of getOtherEducation()">
+    {{educationItem.area}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
 
-    <mat-selection-list #higherEducation>
-      <h3 mat-subheader>Higher Education</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem" *ngFor="let educationItem of getHigherEducation()">
-        {{educationItem.studyType}} {{educationItem.area}} - {{educationItem.institution}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-selection-list #otherEducation>
-      <h3 mat-subheader>Other Education</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem" *ngFor="let educationItem of getOtherEducation()">
-        {{educationItem.area}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
-
-    <mat-selection-list #languages>
-      <h3 mat-subheader>Skills - Operating Systems</h3>
-      <mat-list-option checkboxPosition="before" selected="true" [value]="language" *ngFor="let language of resumeData.languages">
-        {{language.language}} - {{language.fluency}}
-      </mat-list-option>
-    </mat-selection-list>
-    <mat-divider></mat-divider>
-
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened" class="doNotPrint"></mat-checkbox></p>
-    <app-preview
-      [selectedWork]="getSelectedWork(workItems.selectedOptions.selected)"
-      [resumeData]="resumeData"
-      [skills]="{
-        skillsMethodTechniques: skillsMethodTechniques.selectedOptions.selected,
-        skillsBranchKnowledge: skillsBranchKnowledge.selectedOptions.selected,
-        skillsProgramming: skillsProgramming.selectedOptions.selected,
-        skillsServerSoftware: skillsServerSoftware.selectedOptions.selected,
-        skillsTools: skillsTools.selectedOptions.selected,
-        skillsOSes: skillsOSes.selectedOptions.selected}"
-      [education]="{higherEducation: higherEducation.selectedOptions.selected, otherEducation: otherEducation.selectedOptions.selected}"
-      [languages]="languages.selectedOptions.selected"
-    ></app-preview>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<mat-selection-list #languages>
+  <h3 mat-subheader>Skills - Operating Systems</h3>
+  <mat-list-option checkboxPosition="before" selected="true" [value]="language"
+                   *ngFor="let language of resumeData.languages">
+    {{language.language}} - {{language.fluency}}
+  </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>

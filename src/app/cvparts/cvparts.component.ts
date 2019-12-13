@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import lala from '../../assets/cv_tim_nederhoff_nl.json';
+import { Component, Input, OnInit } from '@angular/core';
 import boe from '../../assets/translations.json';
-import Resume, { Education, Skill, Work } from './Resume';
+import { Education, Skill, Work } from '../models/Resume';
+import { MatListOption } from '@angular/material/list';
+import { SelectionService } from '../service/selection.service';
 
 @Component({
   selector: 'app-cvparts',
@@ -10,11 +11,14 @@ import Resume, { Education, Skill, Work } from './Resume';
 })
 export class CvpartsComponent {
 
-  resumeData: Resume = lala as Resume;
+  @Input() resumeData;
   translations = boe.nl;
-  opened = true;
 
-  constructor() {
+  constructor(private selectionService: SelectionService) {
+  }
+
+  onGroupsChange(options: MatListOption[]) {
+    this.selectionService.updateSelection(options);
   }
 
   onPrint() {

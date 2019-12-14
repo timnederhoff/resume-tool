@@ -14,8 +14,29 @@ export class SelectionService {
   private languagesSource = new BehaviorSubject([]);
   languages = this.languagesSource.asObservable();
 
-  private skillsSource = new BehaviorSubject([]);
-  skills = this.educationSource.asObservable();
+  private skillsMethodTechniquesSource = new BehaviorSubject([]);
+  skillsMethodTechniques = this.skillsMethodTechniquesSource.asObservable();
+
+  private skillsBranchKnowledgeSource = new BehaviorSubject([]);
+  skillsBranchKnowledge = this.skillsBranchKnowledgeSource.asObservable();
+
+  private skillsProgrammingSource = new BehaviorSubject([]);
+  skillsProgramming = this.skillsProgrammingSource.asObservable();
+
+  private skillsServerSoftwareSource = new BehaviorSubject([]);
+  skillsServerSoftware = this.skillsServerSoftwareSource.asObservable();
+
+  private skillsToolsSource = new BehaviorSubject([]);
+  skillsTools = this.skillsToolsSource.asObservable();
+
+  private skillsOSesSource = new BehaviorSubject([]);
+  skillsOSes = this.skillsOSesSource.asObservable();
+
+  private higherEducationSource = new BehaviorSubject([]);
+  higherEducation = this.higherEducationSource.asObservable();
+
+  private otherEducationSource = new BehaviorSubject([]);
+  otherEducation = this.otherEducationSource.asObservable();
 
   constructor() {
   }

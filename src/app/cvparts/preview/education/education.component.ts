@@ -11,19 +11,13 @@ export class EducationComponent implements OnInit {
 
   constructor(private selectionService: SelectionService) { }
 
-  education: Education[];
+  higherEducation: Education[];
+  otherEducation: Education[];
   languages: Language[];
 
-  getHigherEducation(): Education[] {
-    return this.education.filter(ed => ['Master', 'MBO', 'Bachelor'].includes(ed.studyType));
-  }
-
-  getOtherEducation(): Education[] {
-    return this.education.filter(ed => !['Master', 'MBO', 'Bachelor'].includes(ed.studyType));
-  }
-
   ngOnInit() {
-    this.selectionService.education.subscribe(selection => this.education = selection.map(o => o.value));
+    this.selectionService.higherEducation.subscribe(selection => this.higherEducation = selection.map(o => o.value));
+    this.selectionService.otherEducation.subscribe(selection => this.otherEducation = selection.map(o => o.value));
     this.selectionService.languages.subscribe(selection => this.languages = selection.map(o => o.value));
   }
 

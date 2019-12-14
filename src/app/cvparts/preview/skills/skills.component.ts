@@ -9,16 +9,21 @@ import { SelectionService } from '../../../service/selection.service';
 })
 export class SkillsComponent implements OnInit {
 
-  skillsData: Skill[];
+  branchKnowledge: Skill[];
+  methodTechniques: Skill[];
+  oSes: Skill[];
+  programming: Skill[];
+  serverSoftware: Skill[];
+  tools: Skill[];
 
   constructor(private selectionService: SelectionService) { }
 
   ngOnInit() {
-    this.selectionService.education.subscribe(selection => this.skillsData = selection.map(o => o.value));
+    this.selectionService.skillsBranchKnowledge.subscribe(selection => this.branchKnowledge = selection.map(o => o.value));
+    this.selectionService.skillsMethodTechniques.subscribe(selection => this.methodTechniques = selection.map(o => o.value));
+    this.selectionService.skillsOSes.subscribe(selection => this.oSes = selection.map(o => o.value));
+    this.selectionService.skillsProgramming.subscribe(selection => this.programming = selection.map(o => o.value));
+    this.selectionService.skillsServerSoftware.subscribe(selection => this.serverSoftware = selection.map(o => o.value));
+    this.selectionService.skillsTools.subscribe(selection => this.tools = selection.map(o => o.value));
   }
-
-  getSkillsForKeyword(keyword: string): Skill[] {
-    return this.skillsData[keyword].map(o => o.value);
-  }
-
 }

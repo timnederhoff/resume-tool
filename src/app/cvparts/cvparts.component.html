@@ -16,16 +16,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #educations (selectionChange)="selectionService.updateSelection('educationSource', educations.selectedOptions.selected)">
-  <h3 mat-subheader>Education</h3>
-  <mat-list-option checkboxPosition="before" selected="true" [value]="education"
-                   *ngFor="let education of resumeData.education">
-    {{education.area + ' @ ' + education.institution | slice:0:35}}
-  </mat-list-option>
-</mat-selection-list>
-<mat-divider></mat-divider>
-
-<mat-selection-list #skillsMethodTechniques>
+<mat-selection-list #skillsMethodTechniques (selectionChange)="selectionService.updateSelection('skillsMethodTechniquesSource', skillsMethodTechniques.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Methods & Techniques</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('methods-techniques')">
@@ -34,7 +25,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #skillsBranchKnowledge>
+<mat-selection-list #skillsBranchKnowledge (selectionChange)="selectionService.updateSelection('skillsBranchKnowledgeSource', skillsBranchKnowledge.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Branch Knowledge</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('branche-knowledge')">
@@ -43,7 +34,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #skillsProgramming>
+<mat-selection-list #skillsProgramming (selectionChange)="selectionService.updateSelection('skillsProgrammingSource', skillsProgramming.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Programming</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('coding-languages')">
@@ -52,7 +43,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #skillsServerSoftware>
+<mat-selection-list #skillsServerSoftware (selectionChange)="selectionService.updateSelection('skillsServerSoftwareSource', skillsServerSoftware.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Server Software</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('server-software')">
@@ -61,7 +52,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #skillsTools>
+<mat-selection-list #skillsTools (selectionChange)="selectionService.updateSelection('skillsToolsSource', skillsTools.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Tools</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('tools')">
@@ -70,7 +61,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #skillsOSes>
+<mat-selection-list #skillsOSes (selectionChange)="selectionService.updateSelection('skillsOSesSource', skillsOSes.selectedOptions.selected)">
   <h3 mat-subheader>Skills - Operating Systems</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="skill"
                    *ngFor="let skill of getSkillsForKeyword('operating-systems')">
@@ -79,14 +70,14 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #higherEducation>
+<mat-selection-list #higherEducation (selectionChange)="selectionService.updateSelection('higherEducationSource', higherEducation.selectedOptions.selected)">
   <h3 mat-subheader>Higher Education</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem"
                    *ngFor="let educationItem of getHigherEducation()">
     {{educationItem.studyType}} {{educationItem.area}} - {{educationItem.institution}}
   </mat-list-option>
 </mat-selection-list>
-<mat-selection-list #otherEducation>
+<mat-selection-list #otherEducation (selectionChange)="selectionService.updateSelection('otherEducationSource', otherEducation.selectedOptions.selected)">
   <h3 mat-subheader>Other Education</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="educationItem"
                    *ngFor="let educationItem of getOtherEducation()">
@@ -95,8 +86,8 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #languages>
-  <h3 mat-subheader>Skills - Operating Systems</h3>
+<mat-selection-list #languages (selectionChange)="selectionService.updateSelection('languagesSource', languages.selectedOptions.selected)">
+  <h3 mat-subheader>Languages</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="language"
                    *ngFor="let language of resumeData.languages">
     {{language.language}} - {{language.fluency}}

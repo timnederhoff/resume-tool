@@ -5,13 +5,22 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable()
 export class SelectionService {
 
-  private source = new BehaviorSubject([]);
-  selection = this.source.asObservable();
+  private workSource = new BehaviorSubject([]);
+  work = this.workSource.asObservable();
+
+  private educationSource = new BehaviorSubject([]);
+  education = this.educationSource.asObservable();
+
+  private languagesSource = new BehaviorSubject([]);
+  languages = this.languagesSource.asObservable();
+
+  private skillsSource = new BehaviorSubject([]);
+  skills = this.educationSource.asObservable();
 
   constructor() {
   }
 
-  updateSelection(options: MatListOption[]) {
-    this.source.next(options);
+  updateSelection(category: string, options: MatListOption[]) {
+    this[category].next(options);
   }
 }

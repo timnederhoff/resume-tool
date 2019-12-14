@@ -1,26 +1,30 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Language } from '../../../models/Resume';
+import { Education, Language } from '../../../models/Resume';
+import { SelectionService } from '../../../service/selection.service';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css']
 })
-export class EducationComponent {
+export class EducationComponent implements OnInit {
 
-  @Input() education;
-  @Input() languages;
+  constructor(private selectionService: SelectionService) { }
 
-  getHigherEducation() {
-    return this.education.higherEducation.map(o => o.value);
+  education: Education[];
+  languages: Language[];
+
+  getHigherEducation(): Education[] {
+    return this.education.filter(ed => ['Master', 'MBO', 'Bachelor'].includes(ed.studyType));
   }
 
-  getOtherEducation() {
-    return this.education.otherEducation.map(o => o.value);
+  getOtherEducation(): Education[] {
+    return this.education.filter(ed => !['Master', 'MBO', 'Bachelor'].includes(ed.studyType));
   }
 
-  getLanguages() {
-    return this.languages.map(o => o.value);
+  ngOnInit() {
+    this.selectionService.education.subscribe(selection => this.education = selection.map(o => o.value));
+    this.selectionService.languages.subscribe(selection => this.languages = selection.map(o => o.value));
   }
 
 }

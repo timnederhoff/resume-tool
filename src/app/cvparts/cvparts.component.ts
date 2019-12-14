@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import boe from '../../assets/translations.json';
-import { Education, Skill, Work } from '../models/Resume';
-import { MatListOption } from '@angular/material/list';
+import Resume, { Education, Skill } from '../models/Resume';
 import { SelectionService } from '../service/selection.service';
 
 @Component({
@@ -11,22 +10,14 @@ import { SelectionService } from '../service/selection.service';
 })
 export class CvpartsComponent {
 
-  @Input() resumeData;
+  @Input() resumeData: Resume;
   translations = boe.nl;
 
   constructor(private selectionService: SelectionService) {
   }
 
-  onGroupsChange(options: MatListOption[]) {
-    this.selectionService.updateSelection(options);
-  }
-
   onPrint() {
     window.print();
-  }
-
-  getSelectedWork(sw): Work[] {
-    return sw.map(o => o.value);
   }
 
   getSkillsForKeyword(requestedKeyword: string): Skill[] {

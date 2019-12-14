@@ -17,11 +17,11 @@ export class TitlepageComponent implements OnInit {
   constructor(private selectionService: SelectionService) { }
 
   ngOnInit(): void {
-    this.selectionService.selection.subscribe(selection => this.basics = selection);
-    this.title = this.basics.map(o => o.value)[7].value;
-    if (this.resumeData) {
-      this.basics = this.resumeData.basics;
-    }
+    // this.selectionService.selection.subscribe(selection => this.basics = selection['basics']);
+    // this.title = this.basics.map(o => o.value)[7].value;
+    // if (this.resumeData) {
+    //   this.basics = this.resumeData.basics;
+    // }
   }
 
   // recentWork(limit: number): Work[] {

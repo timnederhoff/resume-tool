@@ -7,11 +7,6 @@ import { Skill, Work } from '../../models/Resume';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent {
-  @Input() selectedWork: Work[];
-  @Input() resumeData;
-  @Input() skills;
-  @Input() education;
-  @Input() languages;
 
   constructor() {
   }

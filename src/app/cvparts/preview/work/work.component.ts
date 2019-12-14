@@ -14,7 +14,7 @@ export class WorkComponent implements OnInit {
   work: Work[];
 
   ngOnInit() {
-    this.selectionService.selection.subscribe(selection => this.work = selection.map(o => o.value));
+    this.selectionService.work.subscribe(selection => this.work = selection.map(o => o.value));
   }
 
 }

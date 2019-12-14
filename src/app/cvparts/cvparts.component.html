@@ -1,13 +1,13 @@
-<mat-selection-list #basics>
-  <h3 mat-subheader>Basics</h3>
-  <mat-list-option checkboxPosition="before" selected="true" [value]="basic"
-                   *ngFor="let basic of resumeData.basics | keyvalue">
-    {{(translations[basic.key] || basic.key) + ' - ' + basic.value | slice:0:35}}
-  </mat-list-option>
-</mat-selection-list>
-<mat-divider></mat-divider>
+<!--<mat-selection-list #basics>-->
+<!--  <h3 mat-subheader>Basics</h3>-->
+<!--  <mat-list-option checkboxPosition="before" selected="true" [value]="basic"-->
+<!--                   *ngFor="let basic of resumeData.basics | keyvalue">-->
+<!--    {{(translations[basic.key] || basic.key) + ' - ' + basic.value | slice:0:35}}-->
+<!--  </mat-list-option>-->
+<!--</mat-selection-list>-->
+<!--<mat-divider></mat-divider>-->
 
-<mat-selection-list #workItems (selectionChange)="onGroupsChange(workItems.selectedOptions.selected)">
+<mat-selection-list #workItems (selectionChange)="selectionService.updateSelection('workSource', workItems.selectedOptions.selected)">
   <h3 mat-subheader>Work</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="workItem"
                    *ngFor="let workItem of resumeData.work">
@@ -16,7 +16,7 @@
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list #educations>
+<mat-selection-list #educations (selectionChange)="selectionService.updateSelection('educationSource', educations.selectedOptions.selected)">
   <h3 mat-subheader>Education</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="education"
                    *ngFor="let education of resumeData.education">

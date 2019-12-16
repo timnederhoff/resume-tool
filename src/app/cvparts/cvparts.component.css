@@ -1,3 +1,7 @@
 mat-sidenav {
   width: 400px
 }
+
+label {
+  width: 5em;
+}

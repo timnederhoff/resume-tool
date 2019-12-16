@@ -16,9 +16,9 @@ export class EducationComponent implements OnInit {
   languages: Language[];
 
   ngOnInit() {
-    this.selectionService.higherEducation.subscribe(selection => this.higherEducation = selection.map(o => o.value));
-    this.selectionService.otherEducation.subscribe(selection => this.otherEducation = selection.map(o => o.value));
-    this.selectionService.languages.subscribe(selection => this.languages = selection.map(o => o.value));
+    this.selectionService.higherEducation.subscribe(selection => this.higherEducation = selection);
+    this.selectionService.otherEducation.subscribe(selection => this.otherEducation = selection);
+    this.selectionService.languages.subscribe(selection => this.languages = selection);
   }
 
 }

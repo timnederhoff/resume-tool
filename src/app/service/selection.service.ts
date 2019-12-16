@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
-import { MatListOption } from '@angular/material/list';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class SelectionService {
+
+  private basicsSource = new BehaviorSubject([]);
+  basics = this.basicsSource.asObservable();
 
   private workSource = new BehaviorSubject([]);
   work = this.workSource.asObservable();
@@ -41,7 +43,7 @@ export class SelectionService {
   constructor() {
   }
 
-  updateSelection(category: string, options: MatListOption[]) {
+  updateSelection(category: string, options: any[]) {
     this[category].next(options);
   }
 }

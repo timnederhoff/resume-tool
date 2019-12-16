@@ -4,7 +4,7 @@ interface Profile {
   url: string;
 }
 
-interface Basics {
+export interface Basics {
   name: string;
   label: string;
   picture: string;

@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Work } from '../../../models/Resume';
+import { Basics, Work } from '../../../models/Resume';
 import { SelectionService } from '../../../service/selection.service';
-import { MatListOption } from '@angular/material/list';
 
 @Component({
   selector: 'app-titlepage',
@@ -10,24 +9,21 @@ import { MatListOption } from '@angular/material/list';
 })
 export class TitlepageComponent implements OnInit {
 
-  @Input() resumeData;
-  @Input() selectedWork;
-  basics: MatListOption[];
-  title = 'you';
+  selectedWork;
+  basics = [];
   constructor(private selectionService: SelectionService) { }
 
   ngOnInit(): void {
-    // this.selectionService.selection.subscribe(selection => this.basics = selection['basics']);
-    // this.title = this.basics.map(o => o.value)[7].value;
-    // if (this.resumeData) {
-    //   this.basics = this.resumeData.basics;
-    // }
+    this.selectionService.work.subscribe(selection => this.selectedWork = selection);
+    this.selectionService.basics.subscribe(selection => this.basics = selection);
   }
 
-  // recentWork(limit: number): Work[] {
-  //   return this.selectedWork.sort((o, a) => {
-  //     return new Date(a.startDate).getTime() - new Date(o.startDate).getTime();
-  //   }).slice(0, limit);
-  // }
+  recentWork(limit: number): Work[] {
+    return this.selectedWork.sort((o, a) => {
+      return new Date(a.startDate).getTime() - new Date(o.startDate).getTime();
+    }).slice(0, limit);
+  }
+
+  basicByKey = (key: string) => this.basics.length > 0 ? this.basics.filter(o => o.key === key)[0].value : '';
 
 }

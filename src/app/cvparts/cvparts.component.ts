@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import boe from '../../assets/translations.json';
+import translations from '../../assets/translations.json';
 import Resume, { Education, Skill } from '../models/Resume';
 import { SelectionService } from '../service/selection.service';
 
@@ -10,14 +10,23 @@ import { SelectionService } from '../service/selection.service';
 })
 export class CvpartsComponent {
 
+  private basics;
+  private selectedWork;
+  private skillsMethodTechniques;
+  private skillsBranchKnowledge;
+  private skillsProgramming;
+  private skillsServerSoftware;
+  private skillsTools;
+  private skillsOSes;
+  private higherEducation;
+  private otherEducation;
+  private languages;
+
   @Input() resumeData: Resume;
-  translations = boe.nl;
+  translations = translations.nl;
 
   constructor(private selectionService: SelectionService) {
-  }
-
-  onPrint() {
-    window.print();
+    this.selectedWork = this.resumeData;
   }
 
   getSkillsForKeyword(requestedKeyword: string): Skill[] {

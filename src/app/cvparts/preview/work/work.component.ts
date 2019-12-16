@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Work } from '../../../models/Resume';
 import { SelectionService } from '../../../service/selection.service';
 
@@ -14,7 +14,7 @@ export class WorkComponent implements OnInit {
   work: Work[];
 
   ngOnInit() {
-    this.selectionService.work.subscribe(selection => this.work = selection.map(o => o.value));
+    this.selectionService.work.subscribe(selection => this.work = selection);
   }
 
 }

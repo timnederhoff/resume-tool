@@ -23,6 +23,8 @@ import { EducationComponent } from './cvparts/preview/education/education.compon
 import { ApiService } from './service/api.service';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SelectionService } from './service/selection.service';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { SelectionService } from './service/selection.service';
     MatCardModule,
     MatSidenavModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [ApiService, SelectionService],
   bootstrap: [AppComponent],

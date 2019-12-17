@@ -1,7 +1,11 @@
 mat-sidenav {
-  width: 400px
+  width: 400px;
 }
 
 label {
   width: 5em;
+}
+
+.topbar {
+  position: fixed;
 }

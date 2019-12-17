@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Work } from '../../../models/Resume';
-import { SelectionService } from '../../../service/selection.service';
+import { Work } from '../../models/Resume';
+import { SelectionService } from '../../service/selection.service';
 
 @Component({
   selector: 'app-work',

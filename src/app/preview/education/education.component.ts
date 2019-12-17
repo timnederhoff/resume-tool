@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Education, Language } from '../../../models/Resume';
-import { SelectionService } from '../../../service/selection.service';
+import { Education, Language } from '../../models/Resume';
+import { SelectionService } from '../../service/selection.service';
 
 @Component({
   selector: 'app-education',

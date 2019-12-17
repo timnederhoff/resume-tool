@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import cvData from '../../../../assets/cv_tim_nederhoff_nl.json';
+import cvData from '../../../assets/cv_tim_nederhoff_nl.json';
 
 @Component({
   selector: 'app-footer',

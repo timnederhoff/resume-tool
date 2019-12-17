@@ -1,14 +1,14 @@
-<mat-toolbar class="topbar">
-  <button class="laadknop" (click)="getResume('5def68f90741e246f29b83c3')">Load</button>
-</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened [(opened)]="opened" [fixedInViewport]="true" [fixedTopGap]="64" class="doNotPrint">
+    <mat-toolbar class="topbar"></mat-toolbar>
 
-<mat-sidenav-container *ngIf="resumeData">
-  <mat-sidenav mode="side" opened [(opened)]="opened" [fixedInViewport]="true" class="doNotPrint">
     <app-cvparts [resumeData]="resumeData"></app-cvparts>
   </mat-sidenav>
 
   <mat-sidenav-content>
-<!--    <p><mat-checkbox [(ngModel)]="opened" class="doNotPrint"></mat-checkbox></p>-->
+    <mat-toolbar class="topbar">
+      <button mat-raised-button color="primary" class="laadknop" (click)="getResume('5def68f90741e246f29b83c3')">Load</button>
+    </mat-toolbar>
     <app-preview></app-preview>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -1,0 +1,20 @@
+{
+  "name": "Name",
+  "label": "Label",
+  "picture": "Picture",
+  "email": "E-mail",
+  "phone": "Phone number",
+  "website": "Website",
+  "summary": "Summery",
+  "date-of-birth": "Date of Birth",
+  "RECENT_WORK": "Recent Work",
+  "BASICS": "Basic info",
+  "WORK": "Work",
+  "SKILLS": "Skills",
+  "BRANCH_SKILLS": "Branch knowledge",
+  "PROGRAMMING": "Programming",
+  "SERVER_SOFTWARE": "Server Software",
+  "TOOLS": "Tools",
+  "OSSES": "Operating Systems",
+  "METHODS_TECHNIQUES": "Methods and Techniques"
+}

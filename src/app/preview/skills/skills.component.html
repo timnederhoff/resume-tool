@@ -1,42 +1,42 @@
 <section>
-  <h1>Vakkennis</h1>
+  <h1>{{'SKILLS' | translate}}</h1>
   <ng-container *ngIf="methodTechniques.length">
-    <h3>Methodieken/Technieken</h3>
+    <h3>{{'METHODS_TECHNIQUES' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of methodTechniques">{{skill.name}} - {{skill.level}}</li>
     </ul>
   </ng-container>
 
   <ng-container *ngIf="branchKnowledge.length">
-    <h3>Branchekennis</h3>
+    <h3>{{'BRANCH_SKILLS' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of branchKnowledge">{{skill.name}} - {{skill.level}}</li>
     </ul>
   </ng-container>
 
   <ng-container *ngIf="programming.length">
-    <h3>Programmeertalen en protocollen</h3>
+    <h3>{{'PROGRAMMING' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of programming">{{skill.name}} - {{skill.level}}</li>
     </ul>
   </ng-container>
 
   <ng-container *ngIf="serverSoftware.length">
-    <h3>Server Software</h3>
+    <h3>{{'SERVER_SOFTWARE' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of serverSoftware">{{skill.name}} - {{skill.level}}</li>
     </ul>
   </ng-container>
 
   <ng-container *ngIf="tools.length">
-    <h3>Tools</h3>
+    <h3>{{'TOOLS' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of tools">{{skill.name}} - {{skill.level}}</li>
     </ul>
   </ng-container>
 
   <ng-container *ngIf="oSes.length">
-    <h3>Besturingssystemen</h3>
+    <h3>{{'OSSES' | translate}}</h3>
     <ul>
       <li *ngFor="let skill of oSes">{{skill.name}} - {{skill.level}}</li>
     </ul>

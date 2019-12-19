@@ -18,11 +18,29 @@ section {
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5cm;
+  margin-top: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+mat-sidenav-content {
+  margin-top: 85px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.mat-toolbar {
+  min-height: 85px;
 }
 
 .cv-item:not(.last) {
   margin-bottom: 1cm;
+}
+.cvparts {
+  width: 400px;
 }
 
 @media print {

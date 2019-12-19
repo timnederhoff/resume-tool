@@ -26,6 +26,11 @@ export class ApiService {
     return this.http.get(`${this.baseUri}`);
   }
 
+  // Get all resume id's
+  getResumeIds() {
+    return this.http.get(`${this.baseUri}/ids`);
+  }
+
   // Get resume
   getResume(id): Observable<any> {
     const url = `${this.baseUri}/read/${id}`;

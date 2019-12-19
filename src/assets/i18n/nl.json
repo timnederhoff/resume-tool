@@ -1,0 +1,20 @@
+{
+  "name": "Naam",
+  "label": "Label",
+  "picture": "Foto",
+  "email": "E-mail",
+  "phone": "Telefoonnummer",
+  "website": "Website",
+  "summary": "Samenvatting",
+  "date-of-birth": "Geboortedatum",
+  "RECENT_WORK": "Recente Werkervaring",
+  "BASICS": "Basis Gegevens",
+  "WORK": "Werkervaring",
+  "SKILLS": "Vakkennis",
+  "BRANCH_SKILLS": "Branchekennis",
+  "PROGRAMMING": "Programmeertalen en protocollen",
+  "SERVER_SOFTWARE": "Server Software",
+  "TOOLS": "Tools",
+  "OSSES": "Besturingssystemen",
+  "METHODS_TECHNIQUES": "Methodieken/Technieken"
+}

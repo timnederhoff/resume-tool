@@ -5,7 +5,7 @@
 
   <p id="title-headline">{{basicByKey('headline')}}</p>
 
-  <h2>Recente werk ervaring</h2>
+  <h2> {{'RECENT_WORK' | translate}} </h2>
 
   <div *ngFor="let rw of recentWork(4)">
     <h3 class="rw-header">{{rw.position}} - {{rw.company}}</h3>

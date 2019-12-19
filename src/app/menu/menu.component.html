@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Resume</mat-label>
+  <mat-select [(value)]="selected" (selectionChange)="this.getResumeInitalData.emit(this.selected)">
+    <mat-option *ngFor="let resume of availableResumes" [value]="resume" [matTooltip]="resume._id">
+      {{resume.basics.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

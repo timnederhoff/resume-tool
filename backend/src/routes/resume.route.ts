@@ -25,6 +25,17 @@ resumeRoute.route('/').get((req, res, next) => {
   });
 });
 
+// Get All resume _id's
+resumeRoute.route('/ids').get((req, res, next) => {
+  Resume.find().distinct('_id', (error, data) => {
+    if (error) {
+      return next(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
 // Get single resume
 resumeRoute.route('/read/:id').get((req, res, next) => {
   Resume.findById(req.params.id, (error, data) => {

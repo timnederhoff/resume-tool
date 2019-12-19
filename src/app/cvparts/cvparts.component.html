@@ -1,14 +1,22 @@
+<label mat-subheader>Language</label>
+<mat-radio-group class="language-radio" [ngModel]="resumeData.language" (ngModelChange)="translate.use($event)">
+  <mat-radio-button class="language-button" *ngFor="let availableLanguage of translate.getLangs()" [value]="availableLanguage">
+    {{availableLanguage}}
+  </mat-radio-button>
+</mat-radio-group>
+<mat-divider></mat-divider>
+
 <mat-selection-list [(ngModel)]="basics" (ngModelChange)="selectionService.updateSelection('basicsSource', $event)">
-  <h3 mat-subheader>Basics</h3>
+  <h3 mat-subheader>{{'BASICS' | translate}}</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="basic"
-                   *ngFor="let basic of resumeData.basics | keyvalue">
-    {{(translations[basic.key] || basic.key) + ' - ' + basic.value | slice:0:35}}
+                   *ngFor="let basic of resumeData.basics | keyvalue" (click)="editField(basic.value)">
+    {{(basic.key | translate) + ' - ' + basic.value | slice:0:40}}
   </mat-list-option>
 </mat-selection-list>
 <mat-divider></mat-divider>
 
-<mat-selection-list [(ngModel)]="selectedWork" (ngModelChange)="selectionService.updateSelection('workSource', $event)">
-  <h3 mat-subheader>Work</h3>
+<mat-selection-list [(ngModel)]="work" (ngModelChange)="selectionService.updateSelection('workSource', $event)">
+  <h3 mat-subheader>{{'WORK' | translate}}</h3>
   <mat-list-option checkboxPosition="before" selected="true" [value]="workItem"
                    *ngFor="let workItem of resumeData.work">
     {{workItem.position + ' @ ' + workItem.company | slice:0:35}}

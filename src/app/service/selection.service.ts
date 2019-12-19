@@ -43,7 +43,7 @@ export class SelectionService {
   constructor() {
   }
 
-  updateSelection(category: string, options: any[]) {
+  updateSelection(category: string, options: any[] | string) {
     this[category].next(options);
   }
 }

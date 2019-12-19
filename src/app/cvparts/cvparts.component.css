@@ -6,6 +6,12 @@ label {
   width: 5em;
 }
 
-.topbar {
-  position: fixed;
+.language-radio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.language-button {
+  margin: 5px;
 }

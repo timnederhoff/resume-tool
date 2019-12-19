@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ApiService } from './service/api.service';
 import Resume from './models/Resume';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +10,9 @@ export class AppComponent {
   opened = true;
   resumeData: Resume;
 
-  constructor(private apiService: ApiService) {
-  }
-
-  getResume(rid: string) {
-    this.apiService.getResume(rid).subscribe(data => {
-      this.resumeData = data;
-    });
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['en', 'nl']);
+    translate.setDefaultLang('nl');
   }
 
 }

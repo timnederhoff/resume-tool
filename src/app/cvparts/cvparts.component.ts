@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
-import translations from '../../assets/translations.json';
+import { Component, Inject, Input } from '@angular/core';
 import Resume, { Education, Skill } from '../models/Resume';
 import { SelectionService } from '../service/selection.service';
+import { TranslateService } from '@ngx-translate/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cvparts',
@@ -11,7 +12,7 @@ import { SelectionService } from '../service/selection.service';
 export class CvpartsComponent {
 
   private basics;
-  private selectedWork;
+  private work;
   private skillsMethodTechniques;
   private skillsBranchKnowledge;
   private skillsProgramming;
@@ -23,10 +24,8 @@ export class CvpartsComponent {
   private languages;
 
   @Input() resumeData: Resume;
-  translations = translations.nl;
 
-  constructor(private selectionService: SelectionService) {
-    this.selectedWork = this.resumeData;
+  constructor(private selectionService: SelectionService, public translate: TranslateService, public dialog: MatDialog) {
   }
 
   getSkillsForKeyword(requestedKeyword: string): Skill[] {
@@ -40,5 +39,23 @@ export class CvpartsComponent {
   getOtherEducation(): Education[] {
     return this.resumeData.education.filter(ed => !['Master', 'MBO', 'Bachelor'].includes(ed.studyType));
   }
+
+  editField(text: string) {
+    this.dialog.open(EditFieldDialog, {
+      width: '250px',
+      data: text
+    });
+  }
+}
+
+@Component({
+  selector: 'dialog-edit-field-dialog',
+  templateUrl: 'edit-field-dialog.component.html'
+})
+export class EditFieldDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<EditFieldDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: string) {}
 
 }
